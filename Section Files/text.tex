@@ -1,13 +1,13 @@
 \subsection{General Remarks on Accessibility}
 
-For detailed remarks on accessibility you should refer to the links above.  But, in general, the first set in creating an accessible document is to use good structure. By using proper structuring commands in you document  \mintinline{latex}{\section}\footnote{Here we use the minted package which is technically incompatible with the \LaTeX\/ Tagging, but we will see what happens.} or \mintinline{latex}{\subsection} or \mintinline{latex}{\chapter} you help screen readers better understand in what order to read documents.  Also, as we will explore later you should always try and tag images with alt text, actual text, or artifact as demonstrated in the following example from the tagging project:
+For detailed remarks on accessibility you should refer to the links above; here we will make a few brief comments mostly as a way to generate some text for checking accessibility.  The first step in creating an accessible document is to use good structure. By using proper structuring commands in you document\footnote{Here we use the minted package which is technically incompatible with the \LaTeX\/ Tagging, but we will see what happens.}  \mintinline{latex}{\section} or \mintinline{latex}{\subsection} or \mintinline{latex}{\chapter} you help screen readers better understand in what order to read documents.  You must always tag images with alt text, actual text, or artifact as demonstrated in the following example from the tagging project:
 \begin{minted}{latex}
     \includegraphics[height=4cm,alt={Portrait of Shakespeare}]{shakespeare.jpg}
     \includegraphics[height=4cm,artifact]{crinklepaper}
     \includegraphics[height=\baselineskip,actualtext=A]{image-of-a.jpg}
 \end{minted}
-It should be noted that writing good alt text is an art in its self and takes practice.  Related to issues with good images is careful use of color.  Using a tool like \href{https://webaim.org/resources/contrastchecker/}{WebAIM https://webaim.org/resources/contrastchecker/} can help you pick colors that work well together and avoiding those that do not as seen in figure \ref{fig:contrast}.
-\begin{figure}
+It should be noted that writing good alt text is an art in its self and takes practice.  Related to issues with good images is careful use of color.  Using a tool like \href{https://webaim.org/resources/contrastchecker/}{WebAIM https://webaim.org/resources/contrastchecker/} can help you pick colors that work well together and avoiding those that do not as seen in figure \ref{fig:contrast}.  When you want to draw someones attention to a piece of text be sure to use a command like \mintinline{latex}{\emph} instead of just italicizing it, making it bold, or changing the color; this tags the text as emphasized.
+\begin{figure}[hpbt]
     \centering
     \begin{tikzpicture}[alt={examples of images with good and poor color contrast for each there is the text good or poor inside a box that has good and poor contrast}]
         \draw[fill=PotsdamMaroon] (0,0) rectangle +(3,2) node[pos=0.5,color=white]{Good};
@@ -18,6 +18,7 @@ It should be noted that writing good alt text is an art in its self and takes pr
     \caption{Examples of Good and Poor Contrast}
     \label{fig:contrast}
 \end{figure}
+
 
 \subsection{Multi-Column Text with Lorem Ipsum}
 \begin{multicols}{2}

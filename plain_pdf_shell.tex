@@ -1,11 +1,43 @@
+% \DocumentMetadata{
+%   lang        = en-US,
+%   testphase={phase-III,table,math,firstaid},
+%   tagging-setup={math/setup={mathml-SE,mathml-AF}},
+%   tagging=on,
+%   pdfversion=2.0,
+%   pdfstandard = ua-2,
+%   pdfstandard = a-4f, %or a-4
+%   uncompress,
+% }
+% \AddToDocumentProperties[hyperref]{pdftitle}{Accessibility Development}
+% \AddToDocumentProperties[hyperref]{pdfauthor}{Chuck Rocca}
+
+% Above this is for tagged pdf project testing %
+
+% Below this should be general and common %
+
 \documentclass[12pt,twoside]{article}
 \input{tex/acc_header}
 \usepackage{unicode-math}
 
+%%%% Hyper reference package information %%%%
+    \usepackage[
+            pdftitle={Accessibility Development},
+            pdfauthor={Chuck Rocca},
+            pdfproducer={Latex with hyperref},
+            pdflang={en-US},
+            linkcolor=blue!70!black,
+            colorlinks=true,
+            urlcolor=blue!70!black
+        ]{hyperref}
+
+%%%% Document Information %%%%
 \title{Accessibility Development}
-\author[Rocca]{Chuck Rocca}
+\author{Chuck Rocca}
+
 
 \begin{document}
+
+\maketitle
 
     \input{main}
 
