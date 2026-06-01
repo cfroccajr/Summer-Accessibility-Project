@@ -7,11 +7,15 @@
 
 %%%% Reference https://latex3.github.io/tagging-project/tagging-status/ for accessibility status %%%%
 %%%% Accessibility Compatible %%%%
-        \usepackage[table]{xcolor}
-        \usepackage{graphicx}
-        \usepackage{multicol,tabularx}
-        \usepackage{calc,ifthen}
-        \usepackage{hanging,lscape}
+    \usepackage[table]{xcolor}
+    \usepackage{graphicx}
+    \usepackage{multicol,tabularx}
+    \usepackage{calc,ifthen}
+    \usepackage{hanging,lscape}
+    \usepackage{tikzducks,tikzlings}
+    \usetikzlibrary{calc}
+    \usepackage{lipsum}
+
     %%%% Layout Commands %%%%
         \pagestyle{myheadings}
         \usepackage{geometry}
@@ -26,21 +30,23 @@
         \graphicspath{ {images/} }
 
 %%%% Accessibility Incompatible or Partially-Compatible %%%%
-    \usepackage{tikz,pgfplots}
-    \pgfplotsset{compat=newest}
-    \usetikzlibrary{calc}
-    \usetikzlibrary{automata,positioning}
-    \tikzset{>=stealth}
-    \usepackage{caption}
-    \usepackage{subcaption}
+    \usepackage{tikz}
+        \usetikzlibrary{automata,positioning}
+        \tikzset{>=stealth}
     \usepackage{colortbl}
     \usepackage{amsmath,amsthm,amssymb}
     \usepackage{mathrsfs,xfrac}
     \usepackage{bbding}
-    \usepackage{titling}
-    \usepackage{minted}
     \usepackage{fdsymbol}
     \usepackage{tcolorbox}
+
+%%%% Accessibility Incompatible %%%%
+    \usepackage{pgfplots}
+    \pgfplotsset{compat=newest}
+    \usepackage{caption}
+    \usepackage{subcaption}
+    \usepackage{titling}
+    \usepackage{minted}
 
 
 %%%% Tested Commands %%%%
@@ -57,6 +63,10 @@
     \colorlet{S_background}{secondaryaccent!5}
     \colorlet{T_background}{tertiaryaccent!5}
     \definecolor{safety}{HTML}{D6C01A}
+    \definecolor{PotsdamMaroon}{HTML}{8A1538}
+    \definecolor{PotsdamGray}{HTML}{A2AAAD}
+    \definecolor{WCSUBlue}{HTML}{002856}
+    \definecolor{WCSUOrange}{HTML}{FF4D00}
 
 % New Commands and Theorem Environments
     % Rewritten emphasis command

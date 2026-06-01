@@ -1,0 +1,29 @@
+\subsection{General Remarks on Accessibility}
+
+For detailed remarks on accessibility you should refer to the links above.  But, in general, the first set in creating an accessible document is to use good structure. By using proper structuring commands in you document  \mintinline{latex}{\section}\footnote{Here we use the minted package which is technically incompatible with the \LaTeX\/ Tagging, but we will see what happens.} or \mintinline{latex}{\subsection} or \mintinline{latex}{\chapter} you help screen readers better understand in what order to read documents.  Also, as we will explore later you should always try and tag images with alt text, actual text, or artifact as demonstrated in the following example from the tagging project:
+\begin{minted}{latex}
+    \includegraphics[height=4cm,alt={Portrait of Shakespeare}]{shakespeare.jpg}
+    \includegraphics[height=4cm,artifact]{crinklepaper}
+    \includegraphics[height=\baselineskip,actualtext=A]{image-of-a.jpg}
+\end{minted}
+It should be noted that writing good alt text is an art in its self and takes practice.  Related to issues with good images is careful use of color.  Using a tool like \href{https://webaim.org/resources/contrastchecker/}{WebAIM https://webaim.org/resources/contrastchecker/} can help you pick colors that work well together and avoiding those that do not as seen in figure \ref{fig:contrast}.
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[alt={examples of images with good and poor color contrast for each there is the text good or poor inside a box that has good and poor contrast}]
+        \draw[fill=PotsdamMaroon] (0,0) rectangle +(3,2) node[pos=0.5,color=white]{Good};
+        \draw[fill=WCSUOrange] (4,0) rectangle +(3,2) node[pos=0.5,color=white]{Poor};
+        \draw (0,-3) rectangle +(3,2) node[pos=0.5,color=PotsdamMaroon]{Good};
+        \draw (4,-3) rectangle +(3,2) node[pos=0.5,color=WCSUOrange]{Poor};
+    \end{tikzpicture}
+    \caption{Examples of Good and Poor Contrast}
+    \label{fig:contrast}
+\end{figure}
+
+\subsection{Multi-Column Text with Lorem Ipsum}
+\begin{multicols}{2}
+    \lipsum[1-4]
+\end{multicols}
+
+\begin{multicols}{3}
+    \lipsum[1-4]
+\end{multicols}
