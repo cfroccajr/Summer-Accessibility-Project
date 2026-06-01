@@ -1,0 +1,165 @@
+%%%% Useful Refernces %%%%
+% https://tex.stackexchange.com/questions/709974/how-to-add-alt-text-in-latex
+% https://authors.acm.org/journals/how-to-write-alt-text-and-why
+% https://www.latex-project.org/publications/indexbytopic/pdf/
+% https://blogs.ed.ac.uk/isintern/2023/08/15/lewis-forbes-latex-and-accessibility/
+% https://latex3.github.io/tagging-project/tagging-status/
+
+%%%% Reference https://latex3.github.io/tagging-project/tagging-status/ for accessibility status %%%%
+%%%% Accessibility Compatible %%%%
+        \usepackage[table]{xcolor}
+        \usepackage{graphicx}
+        \usepackage{multicol,tabularx}
+        \usepackage{calc,ifthen}
+        \usepackage{hanging,lscape}
+    %%%% Layout Commands %%%%
+        \pagestyle{myheadings}
+        \usepackage{geometry}
+        \geometry{
+            inner=0.75in,
+            outer=0.75in,
+            top=1in,
+            bottom=0.75in
+        }
+        % this tells LaTeX to look in this directory 
+        % if it doesn't find the images else where
+        \graphicspath{ {images/} }
+
+%%%% Accessibility Incompatible or Partially-Compatible %%%%
+    \usepackage{tikz,pgfplots}
+    \pgfplotsset{compat=newest}
+    \usetikzlibrary{calc}
+    \usetikzlibrary{automata,positioning}
+    \tikzset{>=stealth}
+    \usepackage{caption}
+    \usepackage{subcaption}
+    \usepackage{colortbl}
+    \usepackage{amsmath,amsthm,amssymb}
+    \usepackage{mathrsfs,xfrac}
+    \usepackage{bbding}
+    \usepackage{titling}
+    \usepackage{minted}
+    \usepackage{fdsymbol}
+    \usepackage{tcolorbox}
+
+
+%%%% Tested Commands %%%%
+
+%%%% Untested Commands %%%%
+
+%%%% Document Colors
+    % \colorlet{Mycolor1}{green!10!orange}
+    % \definecolor{Mycolor2}{HTML}{00F9DE}
+    \colorlet{accent}{blue!70!black}
+    \colorlet{secondaryaccent}{red!50!black}
+    \colorlet{tertiaryaccent}{green!50!black}
+    \colorlet{background}{accent!5}
+    \colorlet{S_background}{secondaryaccent!5}
+    \colorlet{T_background}{tertiaryaccent!5}
+    \definecolor{safety}{HTML}{D6C01A}
+
+% New Commands and Theorem Environments
+    % Rewritten emphasis command
+    \DeclareTextFontCommand{\emph}{\em\bfseries\color{secondaryaccent}}
+
+    % Misc. New Symbols/Commands
+    \newcommand{\accentcheckmark}{\textcolor{accent}{\CheckmarkBold}}
+    \newcommand{\accentXbrush}{\textcolor{secondaryaccent}{\XSolidBrush}}
+    \newcommand{\redheart}{\textcolor{secondaryaccent}{\varheartsuit}}
+    \newcommand{\reddiamond}{\textcolor{secondaryaccent}{\vardiamondsuit}}
+
+    % Upgraded Math Commands
+    \newcommand{\disp}{\displaystyle}
+    \newcommand{\dlim}[2]{\disp\lim_{#1\rightarrow #2}}
+    \newcommand{\lfrac}[2]{\mbox{\large\(\frac{#1}{#2}\)}}
+    \newcommand{\Lfrac}[2]{\mbox{\Large\(\frac{#1}{#2}\)}}
+    
+    % Number Symbols:
+    \newcommand{\bbN}{\mbox{$\mathbb{N}$}} % Natural Numbers
+    \newcommand{\bbZ}{\mbox{$\mathbb{Z}$}} % Integers
+    \newcommand{\bbQ}{\mbox{$\mathbb{Q}$}} % Rational Numbers
+    \newcommand{\bbR}{\mbox{$\mathbb{R}$}} % Real Numbers
+    \newcommand{\bbC}{\mbox{$\mathbb{C}$}} % Complex Numbers
+
+    % Theorem like environments
+    \theoremstyle{plain}% default
+    \newtheorem{thm}{Theorem}
+    \newtheorem*{thm*}{Theorem}
+    \newtheorem{lem}[thm]{Lemma}
+    \newtheorem{prop}[thm]{Proposition}
+    \newtheorem*{cor}{Corollary}
+    \newtheorem{claim}[thm]{Claim}
+    \newtheorem*{claim*}{Claim}
+    \newtheorem{conj}[thm]{Conjecture}
+    \newtheorem*{conj*}{Conjecture}
+
+    \theoremstyle{definition}
+    \newtheorem{defn}{Definition}
+    \newtheorem{axiom}{Axiom}
+    \newtheorem{exmp}{Example}
+    \newtheorem{exer}{Exercises}
+    \newtheorem*{defn*}{Definition}
+    \newtheorem*{axiom*}{Axiom}
+    \newtheorem*{exmp*}{Example}
+    \newtheorem*{exer*}{Exercises}
+
+    \theoremstyle{remark}
+    \newtheorem*{rem}{Remark}
+    \newtheorem*{note}{Note}
+    \newtheorem{case}{\bfseries Case}[thm]
+    \renewcommand{\thecase}{\arabic{case}}
+    \newtheorem*{reflection}{\bfseries Reflection}
+
+%%%% Additional Commands for Creating Notes %%%%
+%%%% These should get a file of their own once refined %%%%
+
+% \newtcolorbox[auto counter]{expository}[2][]{
+%     colback=white,
+%     colframe=accent,
+%     text fill,
+%     title={Exposition \thetcbcounter: #2},
+%     #1
+% }
+
+% \newtcolorbox[auto counter]{practice}[2][]{
+%     colback=white,
+%     colframe=secondaryaccent,
+%     text fill,
+%     title={Practice \thetcbcounter: #2},
+%     #1
+% }
+
+    \newtheorem{expository}{Exposition}
+    \newtheorem{practice}{Practice}
+
+
+    %%%%%%%%%%%%%%%%%%%%%
+    % This set of commands places a
+    % number at the location of \detail
+    % with the intention that that is 
+    % somplace students should then 
+    % fill in details.
+    %%%%%%%%%%%%%%%%%%%%%%
+    \newcounter{DetailsOn}
+    \setcounter{DetailsOn}{0}
+    \newcommand{\DetailsOn}{
+        \setcounter{DetailsOn}{1}    
+    }
+    \newcommand{\DetailsOff}{
+        \setcounter{DetailsOn}{0}    
+    }
+    \newcounter{detail}
+    \setcounter{detail}{1}
+    \newcommand{\detail}[1][secondaryaccent]{
+        \ifthenelse{\value{DetailsOn}=1}{
+            \textcolor{#1}{
+                \relax\ifmmode 
+                    ^{\mathbf{\left(\thedetail\right)}}
+                \else
+                    \scriptsize
+                    \hspace{-8pt}\raisebox{0.75\baselineskip}{\textbf{(\thedetail)}}\hspace*{-8pt}
+                \fi
+            }
+            \stepcounter{detail}
+        }{}
+    }

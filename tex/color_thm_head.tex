@@ -1,0 +1,37 @@
+% This header addition is to add color to the 
+% theorem and theorem like environments in documents
+% it should be input after header.tex
+
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+\tcbset{
+    thmstyle/.style={
+       % breakable,
+       colframe=tertiaryaccent,
+       colback=white,
+       opacityback=1,
+       before skip=10pt,
+       after skip=10pt,
+    },
+}
+
+% tcolorbox styling for theorem like environments
+    \tcolorboxenvironment{thm}{thmstyle}
+    \tcolorboxenvironment{lem}{thmstyle}
+    \tcolorboxenvironment{prop}{thmstyle}
+    \tcolorboxenvironment{cor}{thmstyle}
+    \tcolorboxenvironment{defn}{thmstyle}
+    \tcolorboxenvironment{axiom}{thmstyle}
+    \tcolorboxenvironment{claim}{thmstyle}
+    \tcolorboxenvironment{conj}{thmstyle}
+    \tcolorboxenvironment{note}{thmstyle}
+    \tcolorboxenvironment{proof}{% `proof' from `amsthm'
+        blanker,breakable,left=5mm,right=5mm,
+        before skip=10pt,after skip=10pt,
+        borderline west={2pt}{0pt}{accent},
+        borderline east={2pt}{0pt}{accent},
+        before upper={\parindent0pt\parskip0pt}
+    }
+
