@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head><title>Accessibility Development</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='plain_pdf_shell.css' rel='stylesheet' type='text/css' /> 
+<meta content='plain_pdf_shell.tex' name='src' /> 
+</head><body>
+<div class='maketitle'>
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+
+<h1 class='titleHead'>Accessibility Development</h1>
+ <div class='author'><span class='rm-lmr-12x-x-120'>Chuck Rocca</span></div><br />
+<div class='date'><span class='rm-lmr-12x-x-120'>June 1, 2026</span></div>
+</div>   
+<section class='abstract' role='doc-abstract'> 
+<h3 class='abstracttitle'>
+<span class='rm-lmbx-10x-x-109'>Abstract</span>
+</h3>      
+<!-- l. 4 --><p class='noindent'><span class='rm-lmr-10x-x-109'>In this article we will be exploring development and creation of accessible documents using
+LaTeX.  This  will  include  commonly  used  commands,  types  of  mathematical  equations,
+imported images, TiKz images, and tables. Parts of the document will also test the effects
+of making multiple columns and using tcolorboxes. Ultimately we will be trying to maximize
+the accessibility of the generated pdf, but acknowleding the inherent shortcomings of pdf
+documents, we will also be looking to generate HTML directly from the source code using
+Pandoc, TeX4ht, and LaTeXML.</span>
+</p>
+</section>   
+
+<h3 class='sectionHead' id='plan-of-action'><span class='titlemark'>1   </span>   <a id='x1-10001'></a>Plan of Action</h3>
+
+                                                                                                
+                                                                                                
+   
+<h4 class='subsectionHead' id='general-steps'><span class='titlemark'>1.1   </span>   <a id='x1-20001.1'></a>General Steps</h4>
+<!-- l. 2 --><p class='noindent'>The plan is create the following sections:
+</p>      
+<ol class='enumerate1'>
+<li class='enumerate' id='x1-2002x1'>A general header file that loads packages that are fully or at least partially compatible with
+the LaTeX Tagging Project.
+</li>
+<li class='enumerate' id='x1-2004x2'>Samples of text in single and multiple columns. Some of these I will type myself. For others I
+will test to see if the lipsum package can be used.
+</li>
+<li class='enumerate' id='x1-2006x3'>Various equations and expressions with and with out array like environments. These will
+include inline, displayed, and stacked equations.
+</li>
+<li class='enumerate' id='x1-2008x4'>A variety of imported and generated images. All of these will contain instances of alt text,
+actual text, or artifact tags.
+</li>
+<li class='enumerate' id='x1-2010x5'>Test special packages like tcolorbox or mint to see if and how they work.</li></ol>
+<!-- l. 11 --><p class='indent'>   After the creation of each section we will test the generated pdf using Blackboard Allie or Acrobat
+Accessibility Check. And use one or more programs to convert the file to HTML. To facilitate this process,
+based on prior experience, this project has two shells that can be used for compilation, one with the
+document meta data and one without.
+
+</p>   
+<h4 class='subsectionHead' id='resources-and-programs'><span class='titlemark'>1.2   </span>   <a id='x1-30001.2'></a>Resources and Programs</h4>
+<!-- l. 15 --><p class='noindent'>In creating this document we will reference a number of sources which include but are not limited to:
+</p>
+                                                                                                
+
+
+</body></html>

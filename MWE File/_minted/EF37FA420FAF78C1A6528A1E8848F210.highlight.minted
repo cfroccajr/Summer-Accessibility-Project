@@ -1,0 +1,5 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+    \PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=4cm,alt=\PYGZob{}Portrait of Shakespeare\PYGZcb{}]}\PYG{n+nb}{\PYGZob{}}shakespeare.jpg\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=4cm,artifact]}\PYG{n+nb}{\PYGZob{}}crinklepaper\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=\PYGZbs{}baselineskip,actualtext=A]}\PYG{n+nb}{\PYGZob{}}image\PYGZhy{}of\PYGZhy{}a.jpg\PYG{n+nb}{\PYGZcb{}}
+\end{MintedVerbatim}

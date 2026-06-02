@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/Users/chuckrocca/OneDrive - WCSU/GitHub/Summer-Accessibility-Project/MWE File"?>
+<?latexml class="article" options="twoside"?>
+<!--  %%%% This is a link to the packages that should work %%% --><!--  %https://math.nist.gov/~BMiller/LaTeXML/manual/included.bindings/ % --><?latexml package="latexml"?>
+<?latexml package="amsmath,amssymb,amsthm"?>
+<?latexml package="tikz"?>
+<?latexml package="graphicx"?>
+<?latexml package="calc,ifthen"?>
+<?latexml package="lscape"?>
+<?latexml package="xcolor" options="table"?>
+<?latexml package="multicol,tabularx"?>
+<?latexml package="colortbl"?>
+<?latexml package="mathrsfs,xfrac"?>
+<?latexml package="bbding"?>
+<?latexml package="newtxmath"?>
+<?latexml package="newtxtext"?>
+<?latexml package="pgfplots"?>
+<?latexml package="caption"?>
+<?latexml package="subcaption"?>
+<?latexml package="titling"?>
+<!--  %%%% Document Colors --><!--  %“colorlet–Mycolor1˝–green!10!orange˝ --><!--  %“definecolor–Mycolor2˝–HTML˝–00F9DE˝ --><?latexml package="geometry"?>
+<?latexml graphicspath="/Users/chuckrocca/OneDrive - WCSU/GitHub/Summer-Accessibility-Project/MWE File/../images"?>
+<?latexml package="fancyvrb"?>
+<?latexml package="listings"?>
+<!--  %%% Throws a minor error %%% --><!--  %“usepackage–hanging˝ --><!--  %“usepackage–lipsum˝ This is supposed to work but is causing compilation to hang, the AI answer is that newer Latex3 implementations may not work. --><!--  %“usepackage–fdsymbol˝ --><!--  %“usepackage–tcolorbox˝ This is another onbe that is supposed to be supported but is causing issues --><!--  %“usepackage–minted˝ not supported and generally problematic --><?latexml package="hyperref" options="
+pdftitle=Hello World,
+pdfauthor=Chuck Rocca,
+pdfproducer=Latex with hyperref,
+pdflang=en-US,
+linkcolor=blue!70!black,
+colorlinks=true,
+urlcolor=blue!70!black
+"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" xmlns:svg="http://www.w3.org/2000/svg" class="ltx_authors_1line" prefix="dcterms: http://purl.org/dc/terms/">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <resource src="ltx-listings.css" type="text/css"/>
+<!--  %**** Hello˙World.tex Line 25 **** -->  <title>Hello World</title>
+  <creator role="author">
+    <personname>Chuck Rocca</personname>
+  </creator>
+  <abstract name="Abstract">
+    <p>Here we will put together an even simpler document. We begin by adding no packages and then carefully introduce them compiling a little at a time.</p>
+  </abstract>
+  <section inlist="toc" xml:id="S1">
+    <tags>
+      <tag>1</tag>
+      <tag role="autoref">section 1</tag>
+      <tag role="refnum">1</tag>
+      <tag role="typerefnum">§1</tag>
+    </tags>
+    <title><tag close=" ">1</tag>First Section</title>
+    <para xml:id="S1.p1">
+      <p>Hello World!!!</p>
+    </para>
+  </section>
+  <section inlist="toc" xml:id="S2">
+    <tags>
+      <tag>2</tag>
+      <tag role="autoref">section 2</tag>
+      <tag role="refnum">2</tag>
+      <tag role="typerefnum">§2</tag>
+    </tags>
+    <title><tag close=" ">2</tag>Second Section</title>
+    <subsection inlist="toc" xml:id="S2.SS1">
+      <tags>
+        <tag>2.1</tag>
+        <tag role="autoref">subsection 2.1</tag>
+        <tag role="refnum">2.1</tag>
+        <tag role="typerefnum">§2.1</tag>
+      </tags>
+      <title><tag close=" ">2.1</tag>A Subsection</title>
+      <para xml:id="S2.SS1.p1">
+        <p>Here is a subsection!!!</p>
+      </para>
+    </subsection>
+    <subsection inlist="toc" xml:id="S2.SS2">
+      <tags>
+        <tag>2.2</tag>
+        <tag role="autoref">subsection 2.2</tag>
+        <tag role="refnum">2.2</tag>
+        <tag role="typerefnum">§2.2</tag>
+      </tags>
+      <title><tag close=" ">2.2</tag>Another Subsection</title>
+      <para xml:id="S2.SS2.p1">
+        <p>Here is another subsection!!!</p>
+      </para>
+    </subsection>
+  </section>
+  <section inlist="toc" xml:id="S3">
+    <tags>
+      <tag>3</tag>
+      <tag role="autoref">section 3</tag>
+      <tag role="refnum">3</tag>
+      <tag role="typerefnum">§3</tag>
+    </tags>
+    <title><tag close=" ">3</tag>Let’s Try some Math</title>
+    <para xml:id="S3.p1">
+      <p>Here is an inline equation: <Math mode="inline" tex="x^{2}+3x+7=10" text="x ^ 2 + 3 * x + 7 = 10" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="3" role="NUMBER">3</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                </XMApp>
+                <XMTok meaning="7" role="NUMBER">7</XMTok>
+              </XMApp>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. Here is the same equation displayed:</p>
+      <equation xml:id="S3.Ex1">
+        <Math mode="display" tex="x^{2}+3x+7=10." text="x ^ 2 + 3 * x + 7 = 10" xml:id="S3.Ex1.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S3.Ex1.m1.1"/>
+              <XMWrap>
+                <XMApp xml:id="S3.Ex1.m1.1">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="3" role="NUMBER">3</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                    <XMTok meaning="7" role="NUMBER">7</XMTok>
+                  </XMApp>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                </XMApp>
+                <XMTok role="PERIOD">.</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+      <p>Then we can use a stacked equation to show solving this:</p>
+      <equationgroup class="ltx_eqn_align" xml:id="S8.EGx1">
+        <equation xml:id="S3.E1">
+          <tags>
+            <tag>(1)</tag>
+            <tag role="autoref">Equation 1</tag>
+            <tag role="refnum">1</tag>
+          </tags>
+          <MathFork>
+            <Math tex="\displaystyle x^{2}+3x+7=10\Rightarrow x^{2}+3x=3" text="x ^ 2 + 3 * x + 7 = 10 Rightarrow x ^ 2 + 3 * x = 3" xml:id="S3.E1.m3">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="multirelation"/>
+                  <XMApp>
+                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="3" role="NUMBER">3</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                    <XMTok meaning="7" role="NUMBER">7</XMTok>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok name="Rightarrow" role="ARROW">⇒</XMTok>
+                  <XMApp>
+                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="3" role="NUMBER">3</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMTok meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+            <MathBranch>
+              <td align="right"><Math mode="inline" tex="\displaystyle x^{2}+3x+7=10" text="x ^ 2 + 3 * x + 7 = 10" xml:id="S3.E1.m1">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok meaning="3" role="NUMBER">3</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        </XMApp>
+                        <XMTok meaning="7" role="NUMBER">7</XMTok>
+                      </XMApp>
+                      <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="left"><Math mode="inline" tex="\displaystyle\Rightarrow x^{2}+3x=3" text="absent Rightarrow x ^ 2 + 3 * x = 3" xml:id="S3.E1.m2">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="multirelation"/>
+                      <XMTok meaning="absent"/>
+                      <XMTok name="Rightarrow" role="ARROW">⇒</XMTok>
+                      <XMApp>
+                        <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok meaning="3" role="NUMBER">3</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMTok meaning="3" role="NUMBER">3</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </MathBranch>
+          </MathFork>
+        </equation>
+        <equation xml:id="S3.E2">
+          <tags>
+            <tag>(2)</tag>
+            <tag role="autoref">Equation 2</tag>
+            <tag role="refnum">2</tag>
+          </tags>
+          <MathFork>
+            <Math tex="\displaystyle\Rightarrow x^{2}+3x+\frac{9}{4}=5\frac{1}{4}" text="absent Rightarrow x ^ 2 + 3 * x + 9 / 4 = 5 + 1 / 4" xml:id="S3.E2.m2">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="multirelation"/>
+                  <XMTok meaning="absent"/>
+                  <XMTok name="Rightarrow" role="ARROW">⇒</XMTok>
+                  <XMApp>
+                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="3" role="NUMBER">3</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMTok meaning="9" role="NUMBER">9</XMTok>
+                      <XMTok meaning="4" role="NUMBER">4</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="plus" role="ADDOP">⁤</XMTok>
+                    <XMTok meaning="5" role="NUMBER">5</XMTok>
+                    <XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      <XMTok meaning="4" role="NUMBER">4</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+            <MathBranch>
+              <td/>
+              <td align="left"><Math mode="inline" tex="\displaystyle\Rightarrow x^{2}+3x+\frac{9}{4}=5\frac{1}{4}" text="absent Rightarrow x ^ 2 + 3 * x + 9 / 4 = 5 + 1 / 4" xml:id="S3.E2.m1">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="multirelation"/>
+                      <XMTok meaning="absent"/>
+                      <XMTok name="Rightarrow" role="ARROW">⇒</XMTok>
+                      <XMApp>
+                        <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok meaning="3" role="NUMBER">3</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMTok meaning="9" role="NUMBER">9</XMTok>
+                          <XMTok meaning="4" role="NUMBER">4</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMTok meaning="plus" role="ADDOP">⁤</XMTok>
+                        <XMTok meaning="5" role="NUMBER">5</XMTok>
+                        <XMApp>
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMTok meaning="1" role="NUMBER">1</XMTok>
+                          <XMTok meaning="4" role="NUMBER">4</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </MathBranch>
+          </MathFork>
+        </equation>
+        <equation xml:id="S3.E3">
+          <tags>
+            <tag>(3)</tag>
+            <tag role="autoref">Equation 3</tag>
+            <tag role="refnum">3</tag>
+          </tags>
+          <MathFork>
+            <Math tex="\displaystyle\Rightarrow\left(x+\frac{3}{2}\right)^{2}=\pm\sqrt{5\frac{1}{4}}" text="absent Rightarrow (x + 3 / 2) ^ 2 = plus-or-minus square-root@(5 + 1 / 4)" xml:id="S3.E3.m2">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="multirelation"/>
+                  <XMTok meaning="absent"/>
+                  <XMTok name="Rightarrow" role="ARROW">⇒</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                    <XMDual>
+                      <XMRef idref="S3.E3.m2.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">(</XMTok>
+                        <XMApp xml:id="S3.E3.m2.1">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMApp>
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok meaning="3" role="NUMBER">3</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                    <XMApp>
+                      <XMTok meaning="square-root"/>
+                      <XMApp>
+                        <XMTok meaning="plus" role="ADDOP">⁤</XMTok>
+                        <XMTok meaning="5" role="NUMBER">5</XMTok>
+                        <XMApp>
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMTok meaning="1" role="NUMBER">1</XMTok>
+                          <XMTok meaning="4" role="NUMBER">4</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+            <MathBranch>
+              <td/>
+              <td align="left"><Math mode="inline" tex="\displaystyle\Rightarrow\left(x+\frac{3}{2}\right)^{2}=\pm\sqrt{5\frac{1}{4}}" text="absent Rightarrow (x + 3 / 2) ^ 2 = plus-or-minus square-root@(5 + 1 / 4)" xml:id="S3.E3.m1">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="multirelation"/>
+                      <XMTok meaning="absent"/>
+                      <XMTok name="Rightarrow" role="ARROW">⇒</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMDual>
+                          <XMRef idref="S3.E3.m1.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="true">(</XMTok>
+                            <XMApp xml:id="S3.E3.m1.1">
+                              <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                              <XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMTok meaning="3" role="NUMBER">3</XMTok>
+                                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                        <XMApp>
+                          <XMTok meaning="square-root"/>
+                          <XMApp>
+                            <XMTok meaning="plus" role="ADDOP">⁤</XMTok>
+                            <XMTok meaning="5" role="NUMBER">5</XMTok>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMTok meaning="1" role="NUMBER">1</XMTok>
+                              <XMTok meaning="4" role="NUMBER">4</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </MathBranch>
+          </MathFork>
+        </equation>
+        <equation xml:id="S3.E4">
+          <tags>
+            <tag>(4)</tag>
+            <tag role="autoref">Equation 4</tag>
+            <tag role="refnum">4</tag>
+          </tags>
+          <MathFork>
+            <Math tex="\displaystyle\Rightarrow x=-\frac{3}{2}\pm\sqrt{5\frac{1}{4}}\ ." text="absent Rightarrow x = (- 3 / 2) plus-or-minus square-root@(5 + 1 / 4)" xml:id="S3.E4.m2">
+              <XMath>
+                <XMDual>
+                  <XMRef idref="S3.E4.m2.1"/>
+                  <XMWrap>
+                    <XMApp xml:id="S3.E4.m2.1">
+                      <XMTok meaning="multirelation"/>
+                      <XMTok meaning="absent"/>
+                      <XMTok name="Rightarrow" role="ARROW">⇒</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                        <XMApp>
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok meaning="3" role="NUMBER">3</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp rpadding="5.0pt">
+                          <XMTok meaning="square-root"/>
+                          <XMApp>
+                            <XMTok meaning="plus" role="ADDOP">⁤</XMTok>
+                            <XMTok meaning="5" role="NUMBER">5</XMTok>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMTok meaning="1" role="NUMBER">1</XMTok>
+                              <XMTok meaning="4" role="NUMBER">4</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="PERIOD">.</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMath>
+            </Math>
+            <MathBranch>
+              <td/>
+              <td align="left"><Math mode="inline" tex="\displaystyle\Rightarrow x=-\frac{3}{2}\pm\sqrt{5\frac{1}{4}}\ ." text="absent Rightarrow x = (- 3 / 2) plus-or-minus square-root@(5 + 1 / 4)" xml:id="S3.E4.m1">
+                  <XMath>
+                    <XMDual>
+                      <XMRef idref="S3.E4.m1.1"/>
+                      <XMWrap>
+                        <XMApp xml:id="S3.E4.m1.1">
+                          <XMTok meaning="multirelation"/>
+                          <XMTok meaning="absent"/>
+                          <XMTok name="Rightarrow" role="ARROW">⇒</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok meaning="equals" role="RELOP">=</XMTok>
+                          <XMApp>
+                            <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                            <XMApp>
+                              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                              <XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMTok meaning="3" role="NUMBER">3</XMTok>
+                                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp rpadding="5.0pt">
+                              <XMTok meaning="square-root"/>
+                              <XMApp>
+                                <XMTok meaning="plus" role="ADDOP">⁤</XMTok>
+                                <XMTok meaning="5" role="NUMBER">5</XMTok>
+                                <XMApp>
+                                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                  <XMTok meaning="1" role="NUMBER">1</XMTok>
+                                  <XMTok meaning="4" role="NUMBER">4</XMTok>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="PERIOD">.</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMath>
+                </Math></td>
+            </MathBranch>
+          </MathFork>
+        </equation>
+      </equationgroup>
+      <p>What if we use special symbols like <Math mode="inline" tex="\mathbb{N}" text="N" xml:id="S3.p1.m2">
+          <XMath>
+            <XMTok font="blackboard" role="UNKNOWN">N</XMTok>
+          </XMath>
+        </Math> or <Math mode="inline" tex="\mathfrak{N}" text="N" xml:id="S3.p1.m3">
+          <XMath>
+            <XMTok font="fraktur" role="UNKNOWN">N</XMTok>
+          </XMath>
+        </Math>? Yes, both of those worked well. What about <Math mode="inline" tex="\mathcal{P}" text="P" xml:id="S3.p1.m4">
+          <XMath>
+            <XMTok font="caligraphic" role="UNKNOWN">P</XMTok>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\nicefrac{{2}}{{3}}" text="2 / 3" xml:id="S3.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP" stretchy="true" width="-0.15em" xoffset="-0.1em">/</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER" rpadding="-0.5em" yoffset="0.3em">2</XMTok>
+              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and ✗? Yep, that worked too.</p>
+    </para>
+  </section>
+  <section inlist="toc" xml:id="S4">
+    <tags>
+      <tag>4</tag>
+      <tag role="autoref">section 4</tag>
+      <tag role="refnum">4</tag>
+      <tag role="typerefnum">§4</tag>
+    </tags>
+    <title><tag close=" ">4</tag>Let’s Add a Diagram</title>
+    <para xml:id="S4.p1">
+      <p>Let us add in <verbatim font="typewriter">\usepackage{tikz}</verbatim> and make a diagram. Before even making a diagram we note that the compile time increases significantly while <verbatim font="typewriter">latexml</verbatim> parses what to do with <verbatim font="typewriter">tikz</verbatim>. Now here is a small figure:</p>
+    </para>
+    <figure inlist="lof" labels="LABEL:fig:our_first_diagram" placement="hbpt" xml:id="S4.F1">
+      <tags>
+        <tag><text fontsize="90%">Figure 1</text></tag>
+        <tag role="autoref">Figure 1</tag>
+        <tag role="refnum">1</tag>
+        <tag role="typerefnum">Figure 1</tag>
+      </tags>
+      <picture class="ltx_centering" height="189.73" tex="\hbox to97.98pt{\vbox to137.12pt{\pgfpicture\makeatletter\hbox{\hskip 1.19998%&#10;pt\lower-57.10551pt\hbox to0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }%&#10;\definecolor{pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}%&#10;\pgfsys@invoke{ }\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@setlinewidth{0.4pt}\pgfsys@invoke{ }\nullfont\hbox to0.0pt{%&#10;\pgfsys@beginscope\pgfsys@invoke{ }{}{{}}{}&#10;{}{{}}{}{}{}{}{{}}{}\pgfsys@beginscope\pgfsys@invoke{ }\definecolor[named]{%&#10;pgffillcolor}{rgb}{0.54296875,0.08203125,0.21875}\pgfsys@color@rgb@fill{0.5429%&#10;6875}{0.08203125}{0.21875}\pgfsys@invoke{ }{}\pgfsys@moveto{0.0pt}{0.0pt}%&#10;\pgfsys@moveto{0.0pt}{0.0pt}\pgfsys@lineto{0.0pt}{56.90552pt}\pgfsys@lineto{56%&#10;.90552pt}{56.90552pt}\pgfsys@lineto{56.90552pt}{0.0pt}\pgfsys@closepath%&#10;\pgfsys@moveto{56.90552pt}{56.90552pt}\pgfsys@fillstroke\pgfsys@invoke{ }&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{{}}{}&#10;{{}{}}{{}}&#10;{{{}}{{}}}{{}}{{{}}{{}}}{}{{}}{}{}{}{}{{&#10;{\pgfsys@beginscope{}&#10;{}&#10;{}&#10;{}&#10;\pgfsys@moveto{1.99997pt}{0.0pt}\pgfsys@lineto{-1.19998pt}{1.59998pt}%&#10;\pgfsys@lineto{0.0pt}{0.0pt}\pgfsys@lineto{-1.19998pt}{-1.59998pt}\pgfsys@fill%&#10;\pgfsys@endscope}}&#10;}{}{}{{}}\pgfsys@moveto{56.90552pt}{56.90552pt}\pgfsys@curveto{96.57738pt}{79.%&#10;81001pt}{85.35828pt}{-11.09653pt}{85.35828pt}{-54.90555pt}\pgfsys@stroke%&#10;\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}{{{}}{\pgfsys@beginscope\pgfsys@invoke{ }%&#10;\pgfsys@transformcm{0.0}{-1.0}{1.0}{0.0}{85.35828pt}{-54.90555pt}%&#10;\pgfsys@invoke{ }\pgfsys@invoke{  \lxSVG@closescope  }\pgfsys@invoke{%&#10;\lxSVG@closescope }\pgfsys@endscope}}{{}}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{}{}\hss}%&#10;\pgfsys@discardpath\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope\hss}}%&#10;\lxSVG@closescope\endpgfpicture}}" width="135.57" xml:id="S4.F1.pic1">
+        <svg:svg height="189.73" overflow="visible" version="1.1" width="135.57">
+          <svg:g fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,189.73) matrix(1 0 0 -1 0 0) translate(1.66,0) translate(0,79.02)">
+            <svg:g fill="#8A1538">
+              <svg:path d="M 0 0 M 0 0 L 0 78.74 L 78.74 78.74 L 78.74 0 Z M 78.74 78.74"/>
+            </svg:g>
+            <svg:path d="M 78.74 78.74 C 133.63 110.43 118.11 -15.35 118.11 -75.97" style="fill:none"/>
+            <svg:g transform="matrix(0.0 -1.0 1.0 0.0 118.11 -75.97)">
+              <svg:path d="M 2.77 0 L -1.66 2.21 L 0 0 L -1.66 -2.21" style="stroke:none"/>
+            </svg:g>
+          </svg:g>
+        </svg:svg>
+      </picture>
+      <toccaption class="ltx_centering"><tag close=" ">1</tag>Our First Diagram</toccaption>
+      <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 1</text></tag><text fontsize="90%">Our First Diagram</text></caption>
+    </figure>
+    <figure inlist="lof" labels="LABEL:fig:parabola" placement="htbp" xml:id="S4.F2">
+      <tags>
+        <tag><text fontsize="90%">Figure 2</text></tag>
+        <tag role="autoref">Figure 2</tag>
+        <tag role="refnum">2</tag>
+        <tag role="typerefnum">Figure 2</tag>
+      </tags>
+      <picture class="ltx_centering" height="253.24" tex="\hbox to253.97pt{\vbox to183.02pt{\pgfpicture\makeatletter\hbox{\hskip 8.61076%&#10;pt\lower-0.2pt\hbox to0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }\definecolor{%&#10;pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\pgfsys@setlinewidth{0.4pt}%&#10;\pgfsys@invoke{ }\nullfont\hbox to0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }&#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}&#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}%&#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}%&#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}%&#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}%&#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}%&#10;{}{}{}{}{}{} \par&#10;\par&#10;\par{}{}{}{}{}{}{}{}{}{}{}{{}{}}{}{}{{{}}{}{{}\pgfsys@beginscope\pgfsys@invoke%&#10;{ }\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;}{{}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@invoke{\lxSVG@closescope }%&#10;\pgfsys@endscope&#10;}{{{}{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}%&#10;{1.0}{0.0pt}{0.0pt}\pgfsys@invoke{ }\pgfsys@invoke{\lxSVG@closescope }%&#10;\pgfsys@endscope}}{{}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@invoke{%&#10;\lxSVG@closescope }\pgfsys@endscope&#10;}{}{{}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@invoke{\lxSVG@closescope }%&#10;\pgfsys@endscope&#10;}}{{}}{{}}{{}{}{}{}{{}}{}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@invoke{%&#10;\lxSVG@closescope }\pgfsys@endscope&#10;}{}{}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@invoke{\lxSVG@closescope }%&#10;\pgfsys@endscope&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{-8.61076pt}{-0.2pt}\pgfsys@invoke{ }\hbox{{ \leavevmode\hbox to253.97pt{%&#10;\vbox to183.02pt{\pgfpicture\makeatletter\hbox{\hskip 8.61076pt\lower-0.2pt%&#10;\hbox to0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }\definecolor{pgfstrokecolor}{%&#10;rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\pgfsys@setlinewidth{0.4pt}%&#10;\pgfsys@invoke{ }\nullfont\hbox to0.0pt{\pgfsys@beginscope\pgfsys@invoke{ }%&#10;\pgfsys@beginscope\pgfsys@invoke{ }&#10;\pgfsys@beginscope\pgfsys@invoke{ }{}{}{}{}{}{}{}{}{}{}{}{}\pgfsys@beginscope%&#10;\pgfsys@invoke{ }\pgfsys@setlinewidth{0.4pt}\pgfsys@invoke{ }\color[rgb]{%&#10;0.75,0.75,0.75}\definecolor[named]{pgfstrokecolor}{rgb}{0.75,0.75,0.75}%&#10;\pgfsys@color@gray@stroke{0.75}\pgfsys@invoke{ }\pgfsys@color@gray@fill{0.75}%&#10;\pgfsys@invoke{ }\definecolor{pgffillcolor}{rgb}{0.75,0.75,0.75}%&#10;\pgfsys@setdash{3.0pt,3.0pt}{0.0pt}\pgfsys@invoke{ }\color[rgb]{0.85,0.85,0.85%&#10;}\definecolor[named]{pgfstrokecolor}{rgb}{0.85,0.85,0.85}%&#10;\pgfsys@color@gray@stroke{0.85}\pgfsys@invoke{ }\pgfsys@color@gray@fill{0.85}%&#10;\pgfsys@invoke{ }\definecolor{pgffillcolor}{rgb}{0.85,0.85,0.85}{}%&#10;\pgfsys@moveto{0.0pt}{0.0pt}\pgfsys@lineto{0.0pt}{182.61719pt}\pgfsys@moveto{3%&#10;9.92157pt}{0.0pt}\pgfsys@lineto{39.92157pt}{182.61719pt}\pgfsys@moveto{79.8431%&#10;4pt}{0.0pt}\pgfsys@lineto{79.84314pt}{182.61719pt}\pgfsys@moveto{159.68628pt}{%&#10;0.0pt}\pgfsys@lineto{159.68628pt}{182.61719pt}\pgfsys@moveto{199.60785pt}{0.0%&#10;pt}\pgfsys@lineto{199.60785pt}{182.61719pt}\pgfsys@moveto{239.52942pt}{0.0pt}%&#10;\pgfsys@lineto{239.52942pt}{182.61719pt}\pgfsys@stroke\pgfsys@invoke{ }&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;\pgfsys@beginscope\pgfsys@invoke{ }{}{}{}{}{}{}{}{}\pgfsys@beginscope%&#10;\pgfsys@invoke{ }\pgfsys@setlinewidth{0.4pt}\pgfsys@invoke{ }\color[rgb]{%&#10;0.75,0.75,0.75}\definecolor[named]{pgfstrokecolor}{rgb}{0.75,0.75,0.75}%&#10;\pgfsys@color@gray@stroke{0.75}\pgfsys@invoke{ }\pgfsys@color@gray@fill{0.75}%&#10;\pgfsys@invoke{ }\definecolor{pgffillcolor}{rgb}{0.75,0.75,0.75}%&#10;\pgfsys@setdash{3.0pt,3.0pt}{0.0pt}\pgfsys@invoke{ }\color[rgb]{0.85,0.85,0.85%&#10;}\definecolor[named]{pgfstrokecolor}{rgb}{0.85,0.85,0.85}%&#10;\pgfsys@color@gray@stroke{0.85}\pgfsys@invoke{ }\pgfsys@color@gray@fill{0.85}%&#10;\pgfsys@invoke{ }\definecolor{pgffillcolor}{rgb}{0.85,0.85,0.85}{}%&#10;\pgfsys@moveto{0.0pt}{54.78516pt}\pgfsys@lineto{239.52942pt}{54.78516pt}%&#10;\pgfsys@moveto{0.0pt}{91.3086pt}\pgfsys@lineto{239.52942pt}{91.3086pt}%&#10;\pgfsys@moveto{0.0pt}{127.83203pt}\pgfsys@lineto{239.52942pt}{127.83203pt}%&#10;\pgfsys@moveto{0.0pt}{164.35547pt}\pgfsys@lineto{239.52942pt}{164.35547pt}%&#10;\pgfsys@stroke\pgfsys@invoke{ }&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;\pgfsys@beginscope\pgfsys@invoke{ }&#10;{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}\pgfsys@beginscope%&#10;\pgfsys@invoke{ }\pgfsys@setlinewidth{0.2pt}\pgfsys@invoke{ }\color[rgb]{%&#10;.5,.5,.5}\definecolor[named]{pgfstrokecolor}{rgb}{.5,.5,.5}%&#10;\pgfsys@color@gray@stroke{.5}\pgfsys@invoke{ }\pgfsys@color@gray@fill{.5}%&#10;\pgfsys@invoke{ }\definecolor[named]{pgffillcolor}{rgb}{.5,.5,.5}{}%&#10;\pgfsys@moveto{0.0pt}{16.12779pt}\pgfsys@lineto{0.0pt}{20.39563pt}%&#10;\pgfsys@moveto{39.92157pt}{16.12779pt}\pgfsys@lineto{39.92157pt}{20.39563pt}%&#10;\pgfsys@moveto{79.84314pt}{16.12779pt}\pgfsys@lineto{79.84314pt}{20.39563pt}%&#10;\pgfsys@moveto{159.68628pt}{16.12779pt}\pgfsys@lineto{159.68628pt}{20.39563pt}%&#10;\pgfsys@moveto{199.60785pt}{16.12779pt}\pgfsys@lineto{199.60785pt}{20.39563pt}%&#10;\pgfsys@moveto{239.52942pt}{16.12779pt}\pgfsys@lineto{239.52942pt}{20.39563pt}%&#10;\pgfsys@stroke\pgfsys@invoke{ }&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;\pgfsys@beginscope\pgfsys@invoke{ }&#10;{{}}{{}}{{}}{{}}{{}}{{}}{{}}{{}}\pgfsys@beginscope\pgfsys@invoke{ }%&#10;\pgfsys@setlinewidth{0.2pt}\pgfsys@invoke{ }\color[rgb]{.5,.5,.5}\definecolor[%&#10;named]{pgfstrokecolor}{rgb}{.5,.5,.5}\pgfsys@color@gray@stroke{.5}%&#10;\pgfsys@invoke{ }\pgfsys@color@gray@fill{.5}\pgfsys@invoke{ }\definecolor[%&#10;named]{pgffillcolor}{rgb}{.5,.5,.5}{}\pgfsys@moveto{117.63077pt}{54.78516pt}%&#10;\pgfsys@lineto{121.89864pt}{54.78516pt}\pgfsys@moveto{117.63077pt}{91.3086pt}%&#10;\pgfsys@lineto{121.89864pt}{91.3086pt}\pgfsys@moveto{117.63077pt}{127.83203pt}%&#10;\pgfsys@lineto{121.89864pt}{127.83203pt}\pgfsys@moveto{117.63077pt}{164.35547%&#10;pt}\pgfsys@lineto{121.89864pt}{164.35547pt}\pgfsys@stroke\pgfsys@invoke{ }&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope&#10;{}{}{}{}{}{}{{}}\pgfsys@moveto{0.0pt}{18.26172pt}\pgfsys@lineto{237.52945pt}{1%&#10;8.26172pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}{{{}}{%&#10;\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1.0}{237%&#10;.52945pt}{18.26172pt}\pgfsys@invoke{ }\pgfsys@invoke{  \lxSVG@closescope  }%&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}&#10;{}{}{}{}{}{}{{}}\pgfsys@moveto{119.76471pt}{0.0pt}\pgfsys@lineto{119.76471pt}{%&#10;180.61722pt}\pgfsys@stroke\pgfsys@invoke{ }{{}{{}}{}{}{{}}{{{}}{{{}}{%&#10;\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{0.0}{1.0}{-1.0}{0.0}{11%&#10;9.76471pt}{180.61722pt}\pgfsys@invoke{ }\pgfsys@invoke{  \lxSVG@closescope  }%&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}{{}}}}&#10;{}{{{}}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{-5.27776pt}{6.15036pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}%&#10;{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$-3$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{34.64381pt}{6.15036pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}%&#10;{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$-2$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{74.56538pt}{6.15036pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}%&#10;{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$-1$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{157.18628pt}{6.15036pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor%&#10;}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$1$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{197.10785pt}{6.15036pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor%&#10;}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$2$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{237.02942pt}{6.15036pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor%&#10;}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$3$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}&#10;{}{{{}}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{109.09776pt}{51.56294pt}\pgfsys@invoke{ }\hbox{{\definecolor{%&#10;pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$2$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{109.09776pt}{88.08638pt}\pgfsys@invoke{ }\hbox{{\definecolor{%&#10;pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$4$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{109.09776pt}{124.60982pt}\pgfsys@invoke{ }\hbox{{\definecolor{%&#10;pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$6$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}{}{{}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{109.09776pt}{161.13326pt}\pgfsys@invoke{ }\hbox{{\definecolor{%&#10;pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$8$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{{}{}}&#10;{}{}{}{}\pgfsys@moveto{0.0pt}{0.0pt}\pgfsys@lineto{239.52942pt}{0.0pt}%&#10;\pgfsys@lineto{239.52942pt}{182.61719pt}\pgfsys@lineto{0.0pt}{182.61719pt}%&#10;\pgfsys@closepath\pgfsys@clipnext\pgfsys@discardpath\pgfsys@invoke{ }%&#10;\pgfsys@beginscope\pgfsys@invoke{ }{}\definecolor[named]{tikz@color}{rgb}{%&#10;0,0,1}\definecolor[named]{.}{rgb}{0,0,1}\definecolor[named]{pgfstrokecolor}{%&#10;rgb}{0,0,1}\pgfsys@color@rgb@stroke{0}{0}{1}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{1}\pgfsys@invoke{ }\pgfsys@setlinewidth{0.8pt}%&#10;\pgfsys@invoke{ } &#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}%&#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}%&#10;{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{{}}&#10;{{}}&#10;{{{}}}{}\pgfsys@moveto{19.96078pt}{132.39746pt}\pgfsys@lineto{21.977pt}{127.83%&#10;25pt}\pgfsys@lineto{23.99324pt}{123.36072pt}\pgfsys@lineto{26.00948pt}{118.982%&#10;1pt}\pgfsys@lineto{28.02571pt}{114.69664pt}\pgfsys@lineto{30.04195pt}{110.5043%&#10;3pt}\pgfsys@lineto{32.05818pt}{106.40518pt}\pgfsys@lineto{34.07442pt}{102.3992%&#10;2pt}\pgfsys@lineto{36.09065pt}{98.48639pt}\pgfsys@lineto{38.10689pt}{94.66673%&#10;pt}\pgfsys@lineto{40.12312pt}{90.94025pt}\pgfsys@lineto{42.13936pt}{87.30692pt%&#10;}\pgfsys@lineto{44.1556pt}{83.76674pt}\pgfsys@lineto{46.17183pt}{80.31973pt}%&#10;\pgfsys@lineto{48.18806pt}{76.9659pt}\pgfsys@lineto{50.2043pt}{73.70522pt}%&#10;\pgfsys@lineto{52.22054pt}{70.53769pt}\pgfsys@lineto{54.23677pt}{67.46333pt}%&#10;\pgfsys@lineto{56.253pt}{64.48213pt}\pgfsys@lineto{58.26924pt}{61.5941pt}%&#10;\pgfsys@lineto{60.28548pt}{58.79922pt}\pgfsys@lineto{62.30171pt}{56.0975pt}%&#10;\pgfsys@lineto{64.31795pt}{53.48895pt}\pgfsys@lineto{66.33418pt}{50.97357pt}%&#10;\pgfsys@lineto{68.35042pt}{48.55135pt}\pgfsys@lineto{70.36665pt}{46.22229pt}%&#10;\pgfsys@lineto{72.38289pt}{43.98639pt}\pgfsys@lineto{74.39912pt}{41.84364pt}%&#10;\pgfsys@lineto{76.41536pt}{39.79407pt}\pgfsys@lineto{78.43158pt}{37.83765pt}%&#10;\pgfsys@lineto{80.44781pt}{35.9744pt}\pgfsys@lineto{82.46405pt}{34.20432pt}%&#10;\pgfsys@lineto{84.48029pt}{32.52737pt}\pgfsys@lineto{86.49652pt}{30.9436pt}%&#10;\pgfsys@lineto{88.51276pt}{29.453pt}\pgfsys@lineto{90.52899pt}{28.05556pt}%&#10;\pgfsys@lineto{92.54523pt}{26.75128pt}\pgfsys@lineto{94.56146pt}{25.54016pt}%&#10;\pgfsys@lineto{96.5777pt}{24.42221pt}\pgfsys@lineto{98.59393pt}{23.39742pt}%&#10;\pgfsys@lineto{100.61017pt}{22.46577pt}\pgfsys@lineto{102.6264pt}{21.6273pt}%&#10;\pgfsys@lineto{104.64264pt}{20.88199pt}\pgfsys@lineto{106.65887pt}{20.22984pt}%&#10;\pgfsys@lineto{108.67511pt}{19.67087pt}\pgfsys@lineto{110.69135pt}{19.20503pt}%&#10;\pgfsys@lineto{112.70758pt}{18.83238pt}\pgfsys@lineto{114.72382pt}{18.55287pt}%&#10;\pgfsys@lineto{116.74005pt}{18.36655pt}\pgfsys@lineto{118.75629pt}{18.27336pt}%&#10;\pgfsys@lineto{120.77252pt}{18.27335pt}\pgfsys@lineto{122.78876pt}{18.3665pt}%&#10;\pgfsys@lineto{124.805pt}{18.55281pt}\pgfsys@lineto{126.82123pt}{18.83228pt}%&#10;\pgfsys@lineto{128.83746pt}{19.20491pt}\pgfsys@lineto{130.8537pt}{19.67072pt}%&#10;\pgfsys@lineto{132.86993pt}{20.22968pt}\pgfsys@lineto{134.88617pt}{20.88179pt}%&#10;\pgfsys@lineto{136.9024pt}{21.62708pt}\pgfsys@lineto{138.91864pt}{22.46552pt}%&#10;\pgfsys@lineto{140.93488pt}{23.39713pt}\pgfsys@lineto{142.95111pt}{24.42189pt}%&#10;\pgfsys@lineto{144.96735pt}{25.53983pt}\pgfsys@lineto{146.98357pt}{26.75092pt}%&#10;\pgfsys@lineto{148.9998pt}{28.05516pt}\pgfsys@lineto{151.01604pt}{29.45258pt}%&#10;\pgfsys@lineto{153.03227pt}{30.94316pt}\pgfsys@lineto{155.04851pt}{32.5269pt}%&#10;\pgfsys@lineto{157.06474pt}{34.2038pt}\pgfsys@lineto{159.08098pt}{35.97386pt}%&#10;\pgfsys@lineto{161.09721pt}{37.83708pt}\pgfsys@lineto{163.11345pt}{39.79347pt}%&#10;\pgfsys@lineto{165.12968pt}{41.84303pt}\pgfsys@lineto{167.14592pt}{43.98573pt}%&#10;\pgfsys@lineto{169.16216pt}{46.2216pt}\pgfsys@lineto{171.17839pt}{48.55064pt}%&#10;\pgfsys@lineto{173.19463pt}{50.97284pt}\pgfsys@lineto{175.21086pt}{53.4882pt}%&#10;\pgfsys@lineto{177.2271pt}{56.09673pt}\pgfsys@lineto{179.24333pt}{58.79842pt}%&#10;\pgfsys@lineto{181.25957pt}{61.59325pt}\pgfsys@lineto{183.2758pt}{64.48126pt}%&#10;\pgfsys@lineto{185.29204pt}{67.46243pt}\pgfsys@lineto{187.30827pt}{70.53676pt}%&#10;\pgfsys@lineto{189.32451pt}{73.70425pt}\pgfsys@lineto{191.34074pt}{76.9649pt}%&#10;\pgfsys@lineto{193.35698pt}{80.31873pt}\pgfsys@lineto{195.37321pt}{83.7657pt}%&#10;\pgfsys@lineto{197.38945pt}{87.30585pt}\pgfsys@lineto{199.40569pt}{90.93915pt}%&#10;\pgfsys@lineto{201.42192pt}{94.66562pt}\pgfsys@lineto{203.43816pt}{98.48524pt}%&#10;\pgfsys@lineto{205.45439pt}{102.39803pt}\pgfsys@lineto{207.47063pt}{106.40398%&#10;pt}\pgfsys@lineto{209.48686pt}{110.5031pt}\pgfsys@lineto{211.5031pt}{114.69537%&#10;pt}\pgfsys@lineto{213.51933pt}{118.9808pt}\pgfsys@lineto{215.53557pt}{123.3594%&#10;pt}\pgfsys@lineto{217.55179pt}{127.83118pt}\pgfsys@lineto{219.56802pt}{132.396%&#10;09pt}\pgfsys@stroke\pgfsys@invoke{ }&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{{}{}}{}{{}{}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{&#10;{{}{{}}}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}{}{}{}%&#10;{&#10;{}{}}&#10;{}{{}}{}}}{{}{}{}{}{}{&#10;{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{230.28114pt}{21.79472pt}\pgfsys@invoke{ }\hbox{{\definecolor{%&#10;pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$x$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{&#10;{{}{{}}}}{{}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}}{{}{}&#10;{}{}{}{&#10;{}{}}&#10;{}{{}}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{123.29771pt}{174.77864pt}\pgfsys@invoke{ }\hbox{{\definecolor{%&#10;pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$y$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;{}{}{}{}{{{{}{}{}{}{}}}}\hbox{\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }%&#10;\definecolor[named]{pgffillcolor}{rgb}{1,1,1}\pgfsys@color@gray@fill{1}%&#10;\pgfsys@invoke{ }\definecolor[named]{pgfstrokecolor}{rgb}{0,0,0}%&#10;\pgfsys@color@gray@stroke{0}\pgfsys@invoke{ }{\offinterlineskip{{{}}}{{}{}{{}}%&#10;{}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{\pgfsys@beginscope\pgfsys@invoke{ }\definecolor[named]{pgffillcolor}{rgb}{%&#10;1,1,1}\pgfsys@color@gray@fill{1}\pgfsys@invoke{ }\definecolor[named]{%&#10;pgfstrokecolor}{rgb}{0,0,0}\pgfsys@color@gray@stroke{0}\pgfsys@invoke{ }{}%&#10;\pgfsys@rect{179.55608pt}{163.15407pt}{54.98172pt}{15.60999pt}%&#10;\pgfsys@fillstroke\pgfsys@invoke{ }&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}{{{{}}\pgfsys@beginscope%&#10;\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1.0}{182.55608pt}{165.1540%&#10;7pt}\pgfsys@invoke{ }\hbox{\vbox{\halign{\pgf@matrix@init@row%&#10;\pgf@matrix@step@column{\pgf@matrix@startcell#\pgf@matrix@endcell}&amp;#%&#10;\pgf@matrix@padding&amp;&amp;\pgf@matrix@step@column{\pgf@matrix@startcell#%&#10;\pgf@matrix@endcell}&amp;#\pgf@matrix@padding\cr\hfil\hskip 0.4pt\hbox{{%&#10;\pgfsys@beginscope\pgfsys@invoke{ }\definecolor[named]{pgffillcolor}{rgb}{%&#10;0,0,0}\pgfsys@color@gray@fill{0}\pgfsys@invoke{ }\pgfsys@beginscope%&#10;\pgfsys@invoke{ }{}\definecolor[named]{tikz@color}{rgb}{0,0,1}\definecolor[%&#10;named]{.}{rgb}{0,0,1}\definecolor[named]{pgfstrokecolor}{rgb}{0,0,1}%&#10;\pgfsys@color@rgb@stroke{0}{0}{1}\pgfsys@invoke{ }\pgfsys@color@rgb@fill{0}{0}%&#10;{1}\pgfsys@invoke{ }\pgfsys@setlinewidth{0.8pt}\pgfsys@invoke{ }{}{}{}{}{}%&#10;\pgfsys@moveto{0.0pt}{0.0pt}\pgfsys@lineto{8.53583pt}{0.0pt}\pgfsys@lineto{17.%&#10;07166pt}{0.0pt}\pgfsys@stroke\pgfsys@invoke{ }&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope\pgfsys@invoke{%&#10;\lxSVG@closescope }\pgfsys@endscope{}}}&amp;\hskip 17.47165pt\hfil&amp;\hfil\hskip 15.%&#10;55504pt\hbox{{\pgfsys@beginscope\pgfsys@invoke{ }{{}}\hbox{\hbox{{%&#10;\pgfsys@beginscope\pgfsys@invoke{ }{{}{}{{&#10;{}{}}}{&#10;{}{}}&#10;{{}{{}}}{{}{}}{}{{}{}}&#10;{&#10;}{{{{}}\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@transformcm{1.0}{0.0}{0.0}{1%&#10;.0}{-13.55504pt}{-2.305pt}\pgfsys@invoke{ }\hbox{{\definecolor{pgfstrokecolor}%&#10;{rgb}{0,0,0}\pgfsys@color@rgb@stroke{0}{0}{0}\pgfsys@invoke{ }%&#10;\pgfsys@color@rgb@fill{0}{0}{0}\pgfsys@invoke{ }\hbox{{$y=x^{2}$}}&#10;}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}&amp;\hskip 15.55504pt\hfil\cr%&#10;}}}\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope}}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{}{}\hss}%&#10;\pgfsys@discardpath\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope\hss}}%&#10;\lxSVG@closescope\endpgfpicture}}}}\pgfsys@invoke{\lxSVG@closescope }%&#10;\pgfsys@endscope}}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@invoke{%&#10;\lxSVG@closescope }\pgfsys@endscope&#10;}{\pgfsys@beginscope\pgfsys@invoke{ }\pgfsys@invoke{\lxSVG@closescope }%&#10;\pgfsys@endscope&#10;}}&#10;\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope{}{}{}\hss}%&#10;\pgfsys@discardpath\pgfsys@invoke{\lxSVG@closescope }\pgfsys@endscope\hss}}%&#10;\lxSVG@closescope\endpgfpicture}}" width="351.42" xml:id="S4.F2.pic1">
+        <svg:svg height="253.24" overflow="visible" version="1.1" width="351.42">
+          <svg:g fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,253.24) matrix(1 0 0 -1 0 0) translate(11.91,0) translate(0,0.28) matrix(1.0 0.0 0.0 1.0 -11.91 -0.28)">
+            <svg:g class="ltx_nestedsvg" transform="matrix(1 0 0 1 0 0) translate(11.91,0) translate(0,0.28)">
+              <svg:g color="#D9D9D9" fill="#D9D9D9" stroke="#D9D9D9" stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt" stroke-width="0.4pt">
+                <svg:path d="M 0 0 L 0 252.69 M 55.24 0 L 55.24 252.69 M 110.48 0 L 110.48 252.69 M 220.96 0 L 220.96 252.69 M 276.2 0 L 276.2 252.69 M 331.44 0 L 331.44 252.69" style="fill:none"/>
+              </svg:g>
+              <svg:g color="#D9D9D9" fill="#D9D9D9" stroke="#D9D9D9" stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt" stroke-width="0.4pt">
+                <svg:path d="M 0 75.81 L 331.44 75.81 M 0 126.34 L 331.44 126.34 M 0 176.88 L 331.44 176.88 M 0 227.42 L 331.44 227.42" style="fill:none"/>
+              </svg:g>
+              <svg:g color="#808080" fill="#808080" stroke="#808080" stroke-width="0.2pt">
+                <svg:path d="M 0 22.32 L 0 28.22 M 55.24 22.32 L 55.24 28.22 M 110.48 22.32 L 110.48 28.22 M 220.96 22.32 L 220.96 28.22 M 276.2 22.32 L 276.2 28.22 M 331.44 22.32 L 331.44 28.22" style="fill:none"/>
+              </svg:g>
+              <svg:g color="#808080" fill="#808080" stroke="#808080" stroke-width="0.2pt">
+                <svg:path d="M 162.77 75.81 L 168.67 75.81 M 162.77 126.34 L 168.67 126.34 M 162.77 176.88 L 168.67 176.88 M 162.77 227.42 L 168.67 227.42" style="fill:none"/>
+              </svg:g>
+              <svg:g fill="#000000" stroke="#000000" stroke-width="0.4pt">
+                <svg:path d="M 0 25.27 L 328.67 25.27" style="fill:none"/>
+                <svg:g transform="matrix(1.0 0.0 0.0 1.0 328.67 25.27)">
+                  <svg:path d="M 2.77 0 L -1.66 2.21 L 0 0 L -1.66 -2.21" style="stroke:none"/>
+                </svg:g>
+                <svg:path d="M 165.72 0 L 165.72 249.92" style="fill:none"/>
+                <svg:g transform="matrix(0.0 1.0 -1.0 0.0 165.72 249.92)">
+                  <svg:path d="M 2.77 0 L -1.66 2.21 L 0 0 L -1.66 -2.21" style="stroke:none"/>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -7.3 8.51)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="14.61"><Math mode="inline" tex="-3" text="- 3" xml:id="S4.F2.pic1.m1">
+                      <XMath>
+                        <XMApp>
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMTok meaning="3" role="NUMBER">3</XMTok>
+                        </XMApp>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 47.94 8.51)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="14.61"><Math mode="inline" tex="-2" text="- 2" xml:id="S4.F2.pic1.m2">
+                      <XMath>
+                        <XMApp>
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 103.18 8.51)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="14.61"><Math mode="inline" tex="-1" text="- 1" xml:id="S4.F2.pic1.m3">
+                      <XMath>
+                        <XMApp>
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMTok meaning="1" role="NUMBER">1</XMTok>
+                        </XMApp>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 217.5 8.51)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><Math mode="inline" tex="1" text="1" xml:id="S4.F2.pic1.m4">
+                      <XMath>
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 272.74 8.51)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><Math mode="inline" tex="2" text="2" xml:id="S4.F2.pic1.m5">
+                      <XMath>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 327.98 8.51)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><Math mode="inline" tex="3" text="3" xml:id="S4.F2.pic1.m6">
+                      <XMath>
+                        <XMTok meaning="3" role="NUMBER">3</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 150.96 71.35)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><Math mode="inline" tex="2" text="2" xml:id="S4.F2.pic1.m7">
+                      <XMath>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 150.96 121.89)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><Math mode="inline" tex="4" text="4" xml:id="S4.F2.pic1.m8">
+                      <XMath>
+                        <XMTok meaning="4" role="NUMBER">4</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 150.96 172.42)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><Math mode="inline" tex="6" text="6" xml:id="S4.F2.pic1.m9">
+                      <XMath>
+                        <XMTok meaning="6" role="NUMBER">6</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 150.96 222.96)">
+                  <svg:foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92"><Math mode="inline" tex="8" text="8" xml:id="S4.F2.pic1.m10">
+                      <XMath>
+                        <XMTok meaning="8" role="NUMBER">8</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:clipPath id="pgfcp1">
+                  <svg:path d="M 0 0 L 331.44 0 L 331.44 252.69 L 0 252.69 Z"/>
+                </svg:clipPath>
+                <svg:g clip-path="url(#pgfcp1)">
+                  <svg:g color="#0000FF" fill="#0000FF" stroke="#0000FF" stroke-width="0.8pt">
+                    <svg:path d="M 27.62 183.2 L 30.41 176.88 L 33.2 170.69 L 35.99 164.64 L 38.78 158.71 L 41.57 152.9 L 44.36 147.23 L 47.15 141.69 L 49.94 136.28 L 52.73 130.99 L 55.52 125.83 L 58.31 120.81 L 61.1 115.91 L 63.89 111.14 L 66.68 106.5 L 69.47 101.99 L 72.26 97.6 L 75.05 93.35 L 77.84 89.22 L 80.63 85.23 L 83.42 81.36 L 86.21 77.62 L 89 74.01 L 91.79 70.53 L 94.58 67.18 L 97.37 63.96 L 100.16 60.86 L 102.95 57.9 L 105.74 55.06 L 108.53 52.36 L 111.32 49.78 L 114.11 47.33 L 116.9 45.01 L 119.69 42.82 L 122.48 40.75 L 125.26 38.82 L 128.05 37.02 L 130.84 35.34 L 133.63 33.79 L 136.42 32.38 L 139.21 31.09 L 142 29.93 L 144.79 28.89 L 147.58 27.99 L 150.37 27.22 L 153.16 26.57 L 155.95 26.06 L 158.74 25.67 L 161.53 25.41 L 164.32 25.28 L 167.11 25.28 L 169.9 25.41 L 172.69 25.67 L 175.48 26.06 L 178.27 26.57 L 181.06 27.22 L 183.85 27.99 L 186.64 28.89 L 189.43 29.93 L 192.22 31.09 L 195.01 32.37 L 197.8 33.79 L 200.59 35.34 L 203.38 37.02 L 206.17 38.82 L 208.96 40.75 L 211.75 42.82 L 214.54 45.01 L 217.33 47.33 L 220.12 49.78 L 222.91 52.36 L 225.7 55.06 L 228.49 57.9 L 231.28 60.86 L 234.07 63.96 L 236.86 67.18 L 239.65 70.53 L 242.44 74.01 L 245.23 77.62 L 248.02 81.36 L 250.81 85.23 L 253.6 89.22 L 256.39 93.35 L 259.18 97.6 L 261.97 101.98 L 264.76 106.5 L 267.55 111.14 L 270.34 115.91 L 273.13 120.81 L 275.92 125.83 L 278.71 130.99 L 281.5 136.27 L 284.29 141.69 L 287.08 147.23 L 289.87 152.9 L 292.66 158.7 L 295.45 164.63 L 298.24 170.69 L 301.03 176.88 L 303.82 183.2" style="fill:none"/>
+                  </svg:g>
+                  <svg:g/>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 318.64 30.16)">
+                  <svg:foreignObject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><Math mode="inline" tex="x" text="x" xml:id="S4.F2.pic1.m11">
+                      <XMath>
+                        <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 170.61 241.84)">
+                  <svg:foreignObject height="8.65" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.28"><Math mode="inline" tex="y" text="y" xml:id="S4.F2.pic1.m12">
+                      <XMath>
+                        <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                      </XMath>
+                    </Math></svg:foreignObject>
+                </svg:g>
+                <svg:g fill="#FFFFFF" stroke="#000000">
+                  <svg:path d="M 248.45 225.76 h 76.08 v 21.6 h -76.08 Z"/>
+                </svg:g>
+                <svg:g fill="#FFFFFF" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 252.6 228.52)">
+                  <svg:g class="ltx_tikzmatrix" transform="matrix(1 0 0 -1 0 8.03)">
+                    <svg:g class="ltx_tikzmatrix_row" transform="matrix(1 0 0 1 0 8.03)">
+                      <svg:g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" color="#0000FF" fill="#0000FF" stroke="#0000FF" stroke-width="0.8pt" transform="matrix(1 0 0 -1 0 0) translate(0.55,0)">
+                        <svg:path d="M 0 0 L 11.81 0 L 23.62 0" style="fill:none"/>
+                      </svg:g>
+                      <svg:g class="ltx_tikzmatrix_col ltx_nopad_l ltx_nopad_r" fill="#000000" stroke="#000000" transform="matrix(1 0 0 -1 24.73 0) translate(21.52,0) matrix(1.0 0.0 0.0 1.0 -18.76 -3.19)">
+                        <svg:foreignObject height="11.14" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="37.51"><Math mode="inline" tex="y=x^{2}" text="y = x ^ 2" xml:id="S4.F2.pic1.m13">
+                            <XMath>
+                              <XMApp>
+                                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                </XMApp>
+                              </XMApp>
+                            </XMath>
+                          </Math></svg:foreignObject>
+                      </svg:g>
+                    </svg:g>
+                  </svg:g>
+                </svg:g>
+              </svg:g>
+            </svg:g>
+          </svg:g>
+        </svg:svg>
+      </picture>
+      <toccaption class="ltx_centering"><tag close=" ">2</tag>Parabola plot using PGFPlots. (from Gemini)</toccaption>
+      <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 2</text></tag><text fontsize="90%">Parabola plot using PGFPlots. (from Gemini)</text></caption>
+    </figure>
+  </section>
+  <section inlist="toc" xml:id="S5">
+    <tags>
+      <tag>5</tag>
+      <tag role="autoref">section 5</tag>
+      <tag role="refnum">5</tag>
+      <tag role="typerefnum">§5</tag>
+    </tags>
+    <title><tag close=" ">5</tag>Now an Image</title>
+    <figure inlist="lof" labels="LABEL:fig:zombie" placement="hbpt" xml:id="S5.F3">
+      <tags>
+        <tag><text fontsize="90%">Figure 3</text></tag>
+        <tag role="autoref">Figure 3</tag>
+        <tag role="refnum">3</tag>
+        <tag role="typerefnum">Figure 3</tag>
+      </tags>
+      <graphics candidates="../images/zombie.png" class="ltx_centering" description="zombie" graphic="zombie.png" options="alt=zombie" xml:id="S5.F3.g1"/>
+      <toccaption class="ltx_centering"><tag close=" ">3</tag>A Zombie</toccaption>
+      <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 3</text></tag><text fontsize="90%">A Zombie</text></caption>
+    </figure>
+    <figure inlist="lof" labels="LABEL:fig:two_zombies" placement="hbpt" xml:id="S5.F4">
+      <tags>
+        <tag><text fontsize="90%">Figure 4</text></tag>
+        <tag role="autoref">Figure 4</tag>
+        <tag role="refnum">4</tag>
+        <tag role="typerefnum">Figure 4</tag>
+      </tags>
+      <figure class="ltx_figure_panel" inlist="lof" labels="LABEL:fig:zombie_one" xml:id="S5.F4.sf1">
+        <tags>
+          <tag><text fontsize="90%">(a)</text></tag>
+          <tag role="autoref">4(a)</tag>
+          <tag role="refnum">4(a)</tag>
+        </tags>
+        <graphics candidates="../images/zombie.png" class="ltx_centering" description="zombie" graphic="zombie.png" options="alt=zombie" xml:id="S5.F4.sf1.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">(a)</tag>Zombie One</toccaption>
+        <caption class="ltx_centering"><tag close=" "><text fontsize="90%">(a)</text></tag><text fontsize="90%">Zombie One</text></caption>
+      </figure>
+      <figure class="ltx_figure_panel" inlist="lof" labels="LABEL:fig:zombie_two" xml:id="S5.F4.sf2">
+        <tags>
+          <tag><text fontsize="90%">(b)</text></tag>
+          <tag role="autoref">4(b)</tag>
+          <tag role="refnum">4(b)</tag>
+        </tags>
+        <graphics candidates="../images/zombie.png" class="ltx_centering" description="zombie" graphic="zombie.png" options="alt=zombie" xml:id="S5.F4.sf2.g1"/>
+        <toccaption class="ltx_centering"><tag close=" "><!--  %**** Hello˙World.tex Line 125 **** -->(b)<!--  %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** --></tag><!--  %**** Hello˙World.tex Line 125 **** -->Zombie Two</toccaption>
+        <caption class="ltx_centering"><tag close=" "><!--  %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** --><text fontsize="90%"><!--  %**** Hello˙World.tex Line 125 **** -->(b)<!--  %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** --></text></tag><!--  %**** Hello˙World.tex Line 125 **** 
+     %**** Hello˙World.tex Line 125 **** --><text fontsize="90%">Zombie Two</text></caption>
+      </figure>
+      <toccaption><tag close=" ">4</tag>Two Zombies</toccaption>
+      <caption><tag close=": "><text fontsize="90%">Figure 4</text></tag><text fontsize="90%">Two Zombies</text></caption>
+    </figure>
+  </section>
+  <section inlist="toc" xml:id="S6">
+    <tags>
+      <tag>6</tag>
+      <tag role="autoref">section 6</tag>
+      <tag role="refnum">6</tag>
+      <tag role="typerefnum">§6</tag>
+    </tags>
+    <title><tag close=" ">6</tag>Miscellaneous Tests</title>
+    <para xml:id="S6.p1">
+      <p>This is a test</p>
+    </para>
+    <para xml:id="S6.p2">
+      <p>then clause</p>
+    </para>
+    <table inlist="lot" labels="LABEL:tab:colored_primes" placement="hbpt" xml:id="S6.T1">
+      <tags>
+        <tag><text fontsize="90%">Table 1</text></tag>
+        <tag role="autoref">Table 1</tag>
+        <tag role="refnum">1</tag>
+        <tag role="typerefnum">Table 1</tag>
+      </tags>
+      <toccaption class="ltx_centering"><tag close=" ">1</tag>The First 25 Prime Numbers in Alternating Colors</toccaption>
+      <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Table 1</text></tag><text fontsize="90%">The First 25 Prime Numbers in Alternating Colors</text></caption>
+<!--  %“rowcolors–start˙row˝–odd˙color˝–even˙color˝ -->      <tabular class="ltx_centering" vattach="middle">
+        <tbody>
+          <tr backgroundcolor="#E6E6E6">
+            <td align="center" border="l r t"><text backgroundcolor="#E6E6E6">2</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#E6E6E6">3</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#E6E6E6">5</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#E6E6E6">7</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#E6E6E6">11</text></td>
+          </tr>
+          <tr backgroundcolor="#D9D9FF">
+            <td align="center" border="l r t"><text backgroundcolor="#D9D9FF">13</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#D9D9FF">17</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#D9D9FF">19</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#D9D9FF">23</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#D9D9FF">29</text></td>
+          </tr>
+          <tr backgroundcolor="#E6E6E6">
+            <td align="center" border="l r t"><!--  %**** Hello˙World.tex Line 150 **** --><text backgroundcolor="#E6E6E6">31</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#E6E6E6">37</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#E6E6E6">41</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#E6E6E6">43</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#E6E6E6">47</text></td>
+          </tr>
+          <tr backgroundcolor="#D9D9FF">
+            <td align="center" border="l r t"><text backgroundcolor="#D9D9FF">53</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#D9D9FF">59</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#D9D9FF">61</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#D9D9FF">67</text></td>
+            <td align="center" border="r t"><text backgroundcolor="#D9D9FF">71</text></td>
+          </tr>
+          <tr backgroundcolor="#E6E6E6">
+            <td align="center" border="b l r t"><text backgroundcolor="#E6E6E6">73</text></td>
+            <td align="center" border="b r t"><text backgroundcolor="#E6E6E6">79</text></td>
+            <td align="center" border="b r t"><text backgroundcolor="#E6E6E6">83</text></td>
+            <td align="center" border="b r t"><text backgroundcolor="#E6E6E6">89</text></td>
+            <td align="center" border="b r t"><text backgroundcolor="#E6E6E6">97</text></td>
+          </tr>
+        </tbody>
+      </tabular>
+    </table>
+    <para xml:id="S6.p3">
+      <p>This is in landscape in the PDF, the HTML understandably ignores this.</p>
+    </para>
+    <pagination role="start_2_columns"/>
+    <para xml:id="S6.p4">
+      <p>This is a test. This should split the text into multiple columns. It may be hard to see this in action without sufficient text. This is why the lipsum package is helpful. It looks like the HTML produced by LatexML also ignores the multicols environment, this also makes since.</p>
+      <pagination role="end_2_columns"/>
+    </para>
+    <table inlist="lot" labels="LABEL:table:example_from_colortbl_manual" placement="hpbt" xml:id="S6.T2">
+      <tags>
+        <tag><text fontsize="90%">Table 2</text></tag>
+        <tag role="autoref">Table 2</tag>
+        <tag role="refnum">2</tag>
+        <tag role="typerefnum">Table 2</tag>
+      </tags>
+      <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
+        <thead>
+          <tr>
+            <td align="left" border="t" thead="column">test</td>
+            <td align="left" border="t" thead="column">row 5</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" border="t">test</td>
+            <td align="left" border="t">row 5</td>
+          </tr>
+          <tr backgroundcolor="#00FF00">
+            <td align="left" border="t"><text backgroundcolor="#00FF00">test</text></td>
+            <td align="left" border="t"><text backgroundcolor="#00FF00">row 5</text></td>
+          </tr>
+          <tr backgroundcolor="#FFFF00">
+            <td align="left" border="t"><text backgroundcolor="#FFFF00">test</text></td>
+            <td align="left" border="t"><text backgroundcolor="#FFFF00">row 5</text></td>
+          </tr>
+          <tr backgroundcolor="#00FF00">
+            <td align="left" border="t"><text backgroundcolor="#00FF00">test</text></td>
+            <td align="left" border="t"><text backgroundcolor="#00FF00">row 5</text></td>
+          </tr>
+          <tr backgroundcolor="#FFFF00">
+            <td align="left" border="t"><text backgroundcolor="#FFFF00">test</text></td>
+            <td align="left" border="t"><text backgroundcolor="#FFFF00">row 5</text></td>
+          </tr>
+          <tr backgroundcolor="#0000FF">
+            <td align="left" border="t"><text backgroundcolor="#0000FF">test</text></td>
+            <td align="left" border="t"><text backgroundcolor="#0000FF">row 5</text></td>
+          </tr>
+          <tr backgroundcolor="#FFFF00">
+            <td align="left" border="t"><text backgroundcolor="#FFFF00">test</text></td>
+            <td align="left" border="t"><text backgroundcolor="#FFFF00">row 5</text></td>
+          </tr>
+          <tr>
+            <td align="left" border="t">test</td>
+            <td align="left" border="t">row 5</td>
+          </tr>
+          <tr>
+            <td align="left" border="t">test</td>
+            <td align="left" border="t">row 5</td>
+          </tr>
+          <tr backgroundcolor="#00FF00">
+            <td align="left" border="t"><text backgroundcolor="#00FF00">test</text></td>
+            <td align="left" border="t"><text backgroundcolor="#00FF00">row 5</text></td>
+          </tr>
+          <tr backgroundcolor="#FFFF00">
+            <td align="left" border="t"><text backgroundcolor="#FFFF00">test</text></td>
+            <td align="left" border="t"><text backgroundcolor="#FFFF00">row 5</text></td>
+          </tr>
+          <tr backgroundcolor="#00FF00">
+            <td align="left" backgroundcolor="#FF0000" border="b t"><text backgroundcolor="#FF0000">test</text></td>
+            <td align="left" border="b t"><text backgroundcolor="#00FF00">row 5</text></td>
+          </tr>
+        </tbody>
+      </tabular>
+      <toccaption class="ltx_centering"><tag close=" ">2</tag>Example from colortbl manual</toccaption>
+      <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Table 2</text></tag><text fontsize="90%">Example from colortbl manual</text></caption>
+    </table>
+    <para xml:id="S6.p5">
+      <p>I should check that cross references work right like for figures <ref labelref="LABEL:fig:our_first_diagram"/> and <ref labelref="LABEL:fig:zombie"/> and tables <ref labelref="LABEL:tab:colored_primes"/> and <ref labelref="LABEL:table:example_from_colortbl_manual"/>.</p>
+    </para>
+    <para xml:id="S6.p6">
+      <listing class="ltx_lst_language_bash ltx_lst_numbers_left ltx_lstlisting" data="bHVhbGF0ZXggSGVsbG9fV29ybGQKbGF0ZXhtbCBIZWxsb19Xb3JsZC50ZXggLS1kZXN0PUhlbGxvX0xhdGV4bWwueG1sCmxhdGV4bWxwb3N0IEhlbGxvX2xhdGV4bWwueG1sIC0tZGVzdD1IZWxsb19sYXRleG1sLmh0bWwgLS1qYXZhc2NyaXB0PSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL21hdGhqYXhAMy9lczUvdGV4LW1tbC1jaHRtbC5qcz9jb25maWc9TU1MX0hUTUxvck1NTCIgLS1zcGxpdCAtLXNwbGl0YXQ9c2VjdGlvbiAtLW5hdmlnYXRpb250b2M9Y29udGV4dCAtLWNzcz1hbmR5LW5hdmJhci5jc3MgLS1jc3M9bm9ybWFsaXplLmNzcyAtLXVybHN0eWxlPWZpbGUgLS10aW1lc3RhbXA9MCAtLWphdmFzY3JpcHQ9YW5keS1uYXZiYXIuanM=" dataencoding="base64" datamimetype="text/plain">
+        <listingline xml:id="lstnumberx1"><tags>
+            <tag>1</tag>
+            <tag role="autoref">1</tag>
+            <tag role="refnum">1</tag>
+            <tag role="typerefnum">line 1</tag>
+          </tags><text class="ltx_lst_identifier" font="typewriter">lualatex</text><text class="ltx_lst_space" font="typewriter"> </text><text class="ltx_lst_identifier" font="typewriter">Hello_World</text></listingline>
+        <listingline xml:id="lstnumberx2"><tags>
+            <tag>2</tag>
+            <tag role="autoref">2</tag>
+            <tag role="refnum">2</tag>
+            <tag role="typerefnum">line 2</tag>
+          </tags><text class="ltx_lst_identifier" font="typewriter">latexml</text><text class="ltx_lst_space" font="typewriter"> </text><text class="ltx_lst_identifier" font="typewriter">Hello_World</text><text font="typewriter">.</text><text class="ltx_lst_identifier" font="typewriter">tex</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">dest</text><text font="typewriter">=</text><text class="ltx_lst_identifier" font="typewriter">Hello_Latexml</text><text font="typewriter">.</text><text class="ltx_lst_identifier" font="typewriter">xml</text></listingline>
+        <listingline xml:id="lstnumberx3"><tags>
+            <tag>3</tag>
+            <tag role="autoref">3</tag>
+            <tag role="refnum">3</tag>
+            <tag role="typerefnum">line 3</tag>
+          </tags><text class="ltx_lst_identifier" font="typewriter">latexmlpost</text><text class="ltx_lst_space" font="typewriter"> </text><text class="ltx_lst_identifier" font="typewriter">Hello_latexml</text><text font="typewriter">.</text><text class="ltx_lst_identifier" font="typewriter">xml</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">dest</text><text font="typewriter">=</text><text class="ltx_lst_identifier" font="typewriter">Hello_latexml</text><text font="typewriter">.</text><text class="ltx_lst_identifier" font="typewriter">html</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">javascript</text><text font="typewriter">=</text><text class="ltx_lst_string" font="typewriter">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML"</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">split</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">splitat</text><text font="typewriter">=</text><text class="ltx_lst_identifier" font="typewriter">section</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">navigationtoc</text><text font="typewriter">=</text><text class="ltx_lst_identifier" font="typewriter">context</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">css</text><text font="typewriter">=</text><text class="ltx_lst_identifier" font="typewriter">andy</text><text font="typewriter">-</text><text class="ltx_lst_identifier" font="typewriter">navbar</text><text font="typewriter">.</text><text class="ltx_lst_identifier" font="typewriter">css</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">css</text><text font="typewriter">=</text><text class="ltx_lst_identifier" font="typewriter">normalize</text><text font="typewriter">.</text><text class="ltx_lst_identifier" font="typewriter">css</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">urlstyle</text><text font="typewriter">=</text><text class="ltx_lst_identifier" font="typewriter">file</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">timestamp</text><text font="typewriter">=0</text><text class="ltx_lst_space" font="typewriter"> </text><text font="typewriter">--</text><text class="ltx_lst_identifier" font="typewriter">javascript</text><text font="typewriter">=</text><text class="ltx_lst_identifier" font="typewriter">andy</text><text font="typewriter">-</text><text class="ltx_lst_identifier" font="typewriter">navbar</text><text font="typewriter">.</text><text class="ltx_lst_identifier" font="typewriter">js</text></listingline>
+      </listing>
+    </para>
+  </section>
+  <section inlist="toc" xml:id="S7">
+    <tags>
+      <tag>7</tag>
+      <tag role="autoref">section 7</tag>
+      <tag role="refnum">7</tag>
+      <tag role="typerefnum">§7</tag>
+    </tags>
+    <title><tag close=" ">7</tag>Home Built or Defined Macros</title>
+    <para xml:id="S7.p1">
+      <p><Math mode="inline" tex="{\color[rgb]{0.5,0,0}\definecolor[named]{pgfstrokecolor}{rgb}{0.5,0,0}\varheartsuit}" text="varheartsuit" xml:id="S7.p1.m1">
+          <XMath>
+            <XMTok color="#800000" name="varheartsuit" role="UNKNOWN">♥</XMTok>
+          </XMath>
+        </Math>
+<Math mode="inline" tex="{\color[rgb]{0.5,0,0}\definecolor[named]{pgfstrokecolor}{rgb}{0.5,0,0}\vardiamondsuit}" text="vardiamondsuit" xml:id="S7.p1.m2">
+          <XMath>
+            <XMTok color="#800000" name="vardiamondsuit" role="UNKNOWN">♦</XMTok>
+          </XMath>
+        </Math>
+<text color="#0000B3">✔</text>,
+<text color="#800000">✗</text></p>
+    </para>
+  </section>
+  <section inlist="toc" xml:id="S8">
+    <tags>
+      <tag>8</tag>
+      <tag role="autoref">section 8</tag>
+      <tag role="refnum">8</tag>
+      <tag role="typerefnum">§8</tag>
+    </tags>
+    <title><tag close=" ">8</tag>Notes:</title>
+    <para xml:id="S8.p1">
+      <p>LatexML does not seem to like the document meta data. This supports the idea that there should be two shells, one with metadata and one without. The only problem with this is that the alt text in tikz seems to only be recognized when the metadata is present and compiling with lualatex. This supports the view that it may be best practices to create diagrams separately and then import them. Within the document the <verbatim font="typewriter">\iflatexml</verbatim> command seems to work fine as long as the compiler can find <verbatim font="typewriter">latexml.sty</verbatim>. So far following the instructions at this site <ref class="ltx_url" font="typewriter" href="https://hackmd.io/@UoL-IWG/latexml">https://hackmd.io/@UoL-IWG/latexml</ref> has LatexML working like a champ; the question is about what packages this can handle. There is also important information in the GitHub repository for the <text class="ltx_LaTeX_logo" cssstyle="letter-spacing:-0.2em; margin-right:0.1em">L<text cssstyle="font-variant:small-caps;" yoffset="0.4ex">a</text>T<text cssstyle="font-variant:small-caps;font-size:120%" yoffset="-0.2ex">e</text>X</text>ML project: <ref class="ltx_url" font="typewriter" href="https://github.com/brucemiller/LaTeXML">https://github.com/brucemiller/LaTeXML</ref>. The package minted continues to be an issue, it is not supported natively by <text class="ltx_LaTeX_logo" cssstyle="letter-spacing:-0.2em; margin-right:0.1em">L<text cssstyle="font-variant:small-caps;" yoffset="0.4ex">a</text>T<text cssstyle="font-variant:small-caps;font-size:120%" yoffset="-0.2ex">e</text>X</text>ML or tex4ht and is not listed as compatible with the work from the <text class="ltx_LaTeX_logo" cssstyle="letter-spacing:-0.2em; margin-right:0.1em">L<text cssstyle="font-variant:small-caps;" yoffset="0.4ex">a</text>T<text cssstyle="font-variant:small-caps;font-size:120%" yoffset="-0.2ex">e</text>X</text> Tagging project; we need to learn fancyvrb. Tried fancyvrb and listings and listings seems to be the better of the two.</p>
+    </para>
+  </section>
+  <rdf about="" content="Chuck Rocca" property="dcterms:creator"/>
+  <rdf about="" content="en-US" property="dcterms:language"/>
+</document>

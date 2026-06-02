@@ -1,0 +1,70 @@
+latexmlpost (LaTeXML version 0.8.8) paginating /Users/chuckrocca/OneDrive - WCSU/GitHub/Summer-Accessibility-Project/MWE File/Hello_Latexml.xml
+(post-processing...
+(Split Hello_latexml.html processing...
+ [Split into in 9 TOCs]
+ 0.00 sec)
+(Scan Hello_latexml.html processing...
+Scan: DBStatus: 3/0 objects
+ 0.00 sec)
+(Scan S1.html processing...
+Scan: DBStatus: 6/0 objects
+ 0.00 sec)
+(Scan S2.html processing...
+Scan: DBStatus: 12/0 objects
+ 0.00 sec)
+(Scan S3.html processing...
+Scan: DBStatus: 41/0 objects
+ 0.00 sec)
+(Scan S4.html processing...
+Scan: DBStatus: 63/0 objects
+ 0.00 sec)
+(Scan S5.html processing...
+Scan: DBStatus: 76/0 objects
+ 0.00 sec)
+(Scan S6.html processing...
+Scan: DBStatus: 91/0 objects
+ 0.00 sec)
+(Scan S7.html processing...
+Scan: DBStatus: 96/0 objects
+ 0.00 sec)
+(Scan S8.html processing...
+Scan: DBStatus: 99/0 objects
+ 0.00 sec)
+(CrossRef Hello_latexml.html processing... 0.00 sec)
+(CrossRef S1.html processing... 0.00 sec)
+(CrossRef S2.html processing... 0.00 sec)
+(CrossRef S3.html processing... 0.00 sec)
+(CrossRef S4.html processing... 0.00 sec)
+(CrossRef S5.html processing... 0.00 sec)
+(CrossRef S6.html processing... 0.00 sec)
+(CrossRef S7.html processing... 0.00 sec)
+(CrossRef S8.html processing... 0.00 sec)
+(Graphics S5.html 3 to process... 0.00 sec)
+(MathML::Presentation S3.html 15 to process...
+converted 15 Maths
+ 0.01 sec)
+(MathML::Presentation S4.html 13 to process...
+converted 13 Maths
+ 0.00 sec)
+(MathML::Presentation S7.html 2 to process...
+converted 2 Maths
+ 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Hello_latexml.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] S1.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] S2.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] S3.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] S4.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] S5.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] S6.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] S7.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] S8.html processing... 0.00 sec)
+(Writer Hello_latexml.html processing... 0.00 sec)
+(Writer S1.html processing... 0.00 sec)
+(Writer S2.html processing... 0.00 sec)
+(Writer S3.html processing... 0.00 sec)
+(Writer S4.html processing... 0.00 sec)
+(Writer S5.html processing... 0.00 sec)
+(Writer S6.html processing... 0.00 sec)
+(Writer S7.html processing... 0.00 sec)
+(Writer S8.html processing... 0.00 sec) 0.09 sec)
+Postprocessing complete No obvious problems (reqd. 0.17s)

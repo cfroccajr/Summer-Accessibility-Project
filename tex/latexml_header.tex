@@ -1,0 +1,87 @@
+%%%% This is a link to the packages that should work %%%
+% https://math.nist.gov/~BMiller/LaTeXML/manual/included.bindings/ %
+
+%%% Working %%%
+	\usepackage{latexml}
+	\usepackage{amsmath,amssymb,amsthm}
+	\usepackage{tikz}
+	        \usetikzlibrary{automata,positioning}
+	        \tikzset{>=stealth}
+	\usepackage{graphicx}
+	\usepackage{calc,ifthen}
+	\usepackage{lscape}
+	\usepackage[table]{xcolor}
+	\usepackage{multicol,tabularx}
+	\usepackage{colortbl}
+	\usepackage{mathrsfs,xfrac}
+    \usepackage{bbding}
+    \usepackage{newtxmath}
+    \usepackage{newtxtext}
+    \usepackage{pgfplots}
+    \pgfplotsset{compat=newest}
+    \usepackage{caption}
+    \usepackage{subcaption}
+    \usepackage{titling}
+
+
+%%%% Document Colors
+    % \colorlet{Mycolor1}{green!10!orange}
+    % \definecolor{Mycolor2}{HTML}{00F9DE}
+    \colorlet{accent}{blue!70!black}
+    \colorlet{secondaryaccent}{red!50!black}
+    \colorlet{tertiaryaccent}{green!50!black}
+    \colorlet{background}{accent!5}
+    \colorlet{S_background}{secondaryaccent!5}
+    \colorlet{T_background}{tertiaryaccent!5}
+    \definecolor{safety}{HTML}{D6C01A}
+    \definecolor{PotsdamMaroon}{HTML}{8A1538}
+    \definecolor{PotsdamGray}{HTML}{A2AAAD}
+    \definecolor{WCSUBlue}{HTML}{002856}
+    \definecolor{WCSUOrange}{HTML}{FF4D00}
+
+%%%% Layout Commands %%%%
+    \pagestyle{myheadings}
+    \usepackage{geometry}
+    \geometry{
+        inner=0.75in,
+        outer=0.75in,
+        top=1in,
+        bottom=0.75in
+    }
+    % this tells LaTeX to look in this directory 
+    % if it doesn't find the images else where
+    \graphicspath{ {../images/} }
+
+% New Commands and Theorem Environments
+    % Rewritten emphasis command
+    \DeclareTextFontCommand{\emph}{\em\bfseries\color{secondaryaccent}}
+
+    % Misc. New Symbols/Commands
+    \newcommand{\accentcheckmark}{\textcolor{accent}{\CheckmarkBold}}
+    \newcommand{\accentXbrush}{\textcolor{secondaryaccent}{\XSolidBrush}}
+    \newcommand{\redheart}{\textcolor{secondaryaccent}{\varheartsuit}}
+    \newcommand{\reddiamond}{\textcolor{secondaryaccent}{\vardiamondsuit}}
+
+
+%%% Testing %%%
+    \usepackage{fancyvrb}
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\ttfamily,
+  linewidth=5in,
+  breaklines,
+  numbers=left
+}
+
+
+
+
+%%% Throws a minor error %%%
+% \usepackage{hanging}
+% \usepackage{lipsum} This is supposed to work but is causing compilation to hang, the AI answer is that newer Latex3 implementations may not work.
+% \usepackage{fdsymbol}
+% \usepackage{tcolorbox} This is another onbe that is supposed to be supported but is causing issues
+% \usepackage{minted} not supported and generally problematic
+
+
