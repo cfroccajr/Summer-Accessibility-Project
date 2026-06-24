@@ -1,22 +1,53 @@
 .ltx_page_navbar {
-    display:block!important; position:fixed; left:0; width:0;top:0;
-    margin:0; overflow-x: hidden;overflow-y: auto !important;
-    max-height: 100% !important; z-index:1;
-    border:0px; padding: 0 0 0 0;
-    font-size: 24px;border-radius: 0 0 10px 0;
-    background-color: lightgray; }
-.ltx_page_navbar ul { margin-left: -24px; }
-.ltx_page_navbar a { text-decoration: none; color: blue; display: block; }
+    display:block!important; 
+    position:fixed; 
+    left:75px; 
+    width:10px; 
+    top:50px;
+    margin:0; 
+    overflow-x: hidden; /* hidden */
+    overflow-y: auto !important;
+    max-height: 100% !important; 
+    z-index:1;
+    border: 0px; 
+    padding: 5px 0 0 0;
+    /* border:0px; padding: 0 0 0 0; */ /* This is the original version of the line above */
+    font-size: 24px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightgray;
+}
+.ltx_page_navbar ul {
+        margin-left: -24px; /* -24px originally*/
+} 
+.ltx_page_navbar a {
+    text-decoration: none; 
+    color: maroon; /* original color blue */
+    display: block; 
+} 
 button {
-    position:fixed; left:0; width:0; top:0; z-index:1;
-    border:0px;border-radius: 0 0 10px 0;
-    padding: 10px 56px 10px 32px;
-  cursor: pointer;
-  background-color: yellow; color: black
-  color: white; }
-button:hover               { background-color: lightgray; }
-.ltx_page_navbar a:hover  {  color:black;background-color: white; }
+    position:fixed; 
+    left:0; 
+    width:0; 
+    top:0; 
+    z-index:1;
+    border:10px;
+    border-radius: 15px 20px 20px 15px; /* originally 0 0 10px 0*/
+    padding: 10px 50px 10px 32px;
+    cursor: pointer;
+    background-color: maroon; 
+    color: white;
+    /*background-color: yellow; color: black*/
+}
+button:hover { 
+    background-color: lightgray; /*lightgray*/
+} 
+.ltx_page_navbar a:hover {  
+    color:black;background-color: white; 
+}
 .ltx_page_main {
-    <<position:absolute; left:0; top:0; right:0;
-    margin:0px; padding:0 20px 0 20px;
-    width:100%; }
+    <<position:absolute; 
+    left:0; top:0; right:0;
+    margin:0px; 
+    padding:0 20px 0 20px;
+    width:100%; 
+}

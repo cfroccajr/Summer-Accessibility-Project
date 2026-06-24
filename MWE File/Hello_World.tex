@@ -206,6 +206,8 @@ latexmlpost Hello_latexml.xml --dest=Hello_latexml.html --javascript="https://cd
 \section{Notes:}
 LatexML does not seem to like the document meta data.  This supports the idea that there should be two shells, one with metadata and one without.  The only problem with this is that the alt text in tikz seems to only be recognized when the metadata is present and compiling with lualatex.  This supports the view that it may be best practices to create diagrams separately and then import them.  Within the document the \verb|\iflatexml| command seems to work fine as long as the compiler can find \verb|latexml.sty|.  So far following the instructions at this site \url{https://hackmd.io/@UoL-IWG/latexml} has LatexML working like a champ; the question is about what packages this can handle.  There is also important information in the GitHub repository for the \LaTeX ML project: \url{https://github.com/brucemiller/LaTeXML}.  The package minted continues to be an issue, it is not supported natively by \LaTeX ML or tex4ht and is not listed as compatible with the work from the \LaTeX\/ Tagging project; we need to learn fancyvrb.  Tried fancyvrb and listings and listings seems to be the better of the two.  In listings look at the language options.
 
+Notes from June 24th.  I adjusted the css files from \url{https://hackmd.io/@UoL-IWG/latexml} to elliminate some messy overlap with the navigation elements.
+
 
 
 \end{document}

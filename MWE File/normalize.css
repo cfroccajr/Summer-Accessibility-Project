@@ -20,8 +20,12 @@ html {
  * Remove the margin in all browsers.
  */
 
+/** 
+ * originally 0, this chnages stops the button from the other css file from overwriting the regular navigation links
+*/
+
 body {
-  margin: 0;
+  margin: 50px 75px 0px 25px; 
 }
 
 /**
