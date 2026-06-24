@@ -1,4 +1,21 @@
 This section is a running narrative of what work has been done and when.
 \begin{itemize}
-    \item June 6th 2026: This document was created and material is added to the first few sections.  So far the document uploaded to Balckboard is testing well.  The only issue that was flagged and can't be fixed is the deliberate example of poor contrast in figure \ref{fig:contrast}.  When compiling with Pandoc it does not like tikz and make4ht has issues with minted.  The command \mintinline{linuxconfig}{mak4ht -m clean -a info plain_pdf_shell.tex} followed by \mintinline{linuxconfig}{make4ht -m clean -a info plain_pdf_shell.tex}.  Mint is causing an issue with the conversion, should probably try using fancyvrb instead.  Also noted that without the document meta data portion of the header from the tagging project the compiler can't recognize the alt text for tikz.  I tried \LaTeX ML and it had issues with just the commands as given by Gemini AI; that will require further exploration.  Note for Pandoc \verb|pandoc -f latex -t html5 plain_pdf_shell.tex -o html/output2.html --mathjax --standalone| seemed fine except for tikz and lipsum.
+    \item June 1st 2026: This document was created and material is added to the first few sections.  So far the document uploaded to Balckboard is testing well.  The only issue that was flagged and can't be fixed is the deliberate example of poor contrast in figure \ref{fig:contrast}.  When compiling with Pandoc it does not like tikz and make4ht has issues with minted.  The command \mintinline{linuxconfig}{mak4ht -m clean -a info plain_pdf_shell.tex} followed by \mintinline{linuxconfig}{make4ht -m clean -a info plain_pdf_shell.tex}.  Mint is causing an issue with the conversion, should probably try using fancyvrb instead.  Also noted that without the document meta data portion of the header from the tagging project the compiler can't recognize the alt text for tikz.  I tried \LaTeX ML and it had issues with just the commands as given by Gemini AI; that will require further exploration.  Note for Pandoc \verb|pandoc -f latex -t html5 plain_pdf_shell.tex -o html/output2.html --mathjax --standalone| seemed fine except for tikz and lipsum.
+    \item June 2nd 2026: LatexML does not seem to like the document meta data.  This supports the idea that there should be two shells, one with metadata and one without.  The only problem with this is that the alt text in tikz seems to only be recognized when the metadata is present and compiling with lualatex.  This supports the view that it may be best practices to create diagrams separately and then import them.  Within the document the \verb|\iflatexml| command seems to work fine as long as the compiler can find \verb|latexml.sty|.  So far following the instructions at this site \url{https://hackmd.io/@UoL-IWG/latexml} has LatexML working like a champ; the question is about what packages this can handle.  There is also important information in the GitHub repository for the \LaTeX ML project: \url{https://github.com/brucemiller/LaTeXML}.  The package minted continues to be an issue, it is not supported natively by \LaTeX ML or tex4ht and is not listed as compatible with the work from the \LaTeX\/ Tagging project; we need to learn fancyvrb.  Tried fancyvrb and listings and listings seems to be the better of the two.  In listings look at the language options. (copied from \verb|Hello_World.tex|)
+    \item June 6th, 2026: Did a brief AI conversation with the prompt:
+    \begin{quote}
+        I want to feed a list of *.tex files into a shell with a header and \verb|\begin{document}| \verb|\end{document}| tags so that the *.tex is the input for the body.  Then have the computer compile it to a pdf.
+    \end{quote}
+    The reply was the following: See Comment in File
+    % for f in *.tex; do echo -e "\\documentclass{article}\n\\begin{document}\n\\input{$f}\n\\end{document}" > temp_main.tex && pdflatex temp_main.tex && mv temp_main.pdf "${f%.tex}.pdf"; done && rm temp_main.tex temp_main.log temp_main.aux
+
+\lstinline{lstinline} 
+
+% \begin{lstlisting}[] this is a test \end{lstlisting}
+
+\begin{lstlisting}[language=bash]
+lualatex Hello_World
+latexml Hello_World.tex --dest=Hello_Latexml.xml
+latexmlpost Hello_latexml.xml --dest=Hello_latexml.html --javascript="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" --split --splitat=section --navigationtoc=context --css=andy-navbar.css --css=normalize.css --urlstyle=file --timestamp=0 --javascript=andy-navbar.js
+\end{lstlisting}
 \end{itemize}
